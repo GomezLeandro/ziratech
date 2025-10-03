@@ -1,7 +1,20 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* Establece un layout de grid para alinear el menú lateral y el contenido principal */
+.app-container {
+  display: grid;
+  /* La proporción de las columnas se ajusta para que el menú sea más angosto. */
+  grid-template-columns: 25% 75%; 
 }
 
+/* Define el área del menú lateral en el grid */
+.sidebar {
+  /* El ancho ahora es controlado por 'grid-template-columns' en '.app-container' */
+  background-color: #f7f7f7; /* Fondo gris claro para el menú */
+  border-right: 1px solid #e0e0e0; /* Borde derecho para separar */
+  padding: 20px;
+  min-height: 100vh; /* Asegura que el menú ocupe toda la altura */
+}
+
+/* El contenido principal ocupa el espacio restante */
+.main-content {
+  padding: 0; /* Eliminamos el padding para que las secciones puedan ocupar todo el ancho */
+}

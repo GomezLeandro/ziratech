@@ -1,0 +1,89 @@
+/* --- Contenedor de la sección de Contacto --- */
+.contacto-section {
+  padding: 80px;
+  background-color: #fff;
+  text-align: center;
+}
+
+/* --- Encabezado con ícono y título --- */
+.contacto-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.contacto-icon {
+  font-size: 2em;
+  color: #00bfff;
+  margin-right: 10px;
+}
+
+.contacto-header h2 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #333;
+}
+
+/* --- Información de contacto y redes sociales --- */
+.contacto-info {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contacto-info p {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.contacto-info i {
+  margin-right: 10px;
+  color: #00bfff;
+}
+
+.contacto-social a {
+  font-size: 1.8em;
+  color: #333;
+  margin: 0 10px;
+}
+
+/* --- Formulario de contacto --- */
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.contacto-form input, .contacto-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contacto-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* --- Botón del formulario --- */
+.btn-contactanos {
+  background-color: #00bfff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 40px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-contactanos:hover {
+  background-color: #009acd;
+}

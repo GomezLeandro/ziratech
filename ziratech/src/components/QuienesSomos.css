@@ -1,0 +1,26 @@
+.quienes-somos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.quienes-somos-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.quienes-somos-image {
+  flex: 1;
+}
+
+.quienes-somos-image img {
+  width: 100%;
+}
+
+.quienes-somos-stats {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #00bfff;
+  color: white;
+  padding: 20px;
+}

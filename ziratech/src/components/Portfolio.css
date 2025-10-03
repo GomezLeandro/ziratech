@@ -1,0 +1,92 @@
+/* --- Estilos generales de la sección de portafolio --- */
+.portfolio {
+  padding: 40px 20px;
+}
+
+.portfolio h2 {
+  text-align: left;
+  margin-bottom: 40px;
+  color: #00bfff;
+  font-weight: bold;
+}
+
+/* --- Contenedor principal con layout de dos columnas --- */
+.portfolio-container {
+  display: flex;
+  gap: 40px; /* Espacio entre el submenú y la galería */
+}
+
+/* --- Columna 1: Submenú de categorías --- */
+.portfolio-submenu {
+  width: 20%; /* El submenú ocupa el 20% del ancho */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.portfolio-submenu button {
+  background: none;
+  border: none;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 500;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+/* --- Estilo del botón activo en el submenú (en azul) --- */
+.portfolio-submenu button.active {
+  color: #00bfff;
+}
+
+/* --- Columna 2: Galería de proyectos --- */
+.portfolio-grid {
+  width: 80%; /* La galería ocupa el 80% del ancho */
+  display: grid;
+  /* --- Dos columnas con un espacio de 20px entre ellas --- */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* --- Estilos de cada elemento del portafolio --- */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0; /* Quitamos el borde redondeado */
+}
+
+.portfolio-item img {
+  width: 100%;
+  display: block;
+}
+
+/* --- Overlay que aparece desde abajo --- */
+.portfolio-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  color: black;
+  padding: 20px;
+  transform: translateY(100%); /* Inicialmente, el overlay está fuera de la vista (abajo) */
+  transition: transform 0.3s ease; /* Transición suave para el efecto de deslizamiento */
+  text-align: center;
+}
+
+/* --- Mostrar el overlay al pasar el ratón sobre el elemento --- */
+.portfolio-item:hover .portfolio-item-overlay {
+  transform: translateY(0); /* Al pasar el ratón, el overlay se desliza a su posición original */
+}
+
+.portfolio-item-overlay h3 {
+  margin: 0 0 5px 0;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.portfolio-item-overlay span {
+  font-size: 0.9em;
+  color: #666;
+}
