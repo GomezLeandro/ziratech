@@ -10,8 +10,13 @@
   padding: 20px;
   background-color: #f8f9fa;
 }
-
+.logo{
+  width: 60%;
+}
 .navbar-logo {
+  display:flex;
+  justify-content: center;
+  align-items: center;
   font-size: 2em;
   font-weight: bold;
 }

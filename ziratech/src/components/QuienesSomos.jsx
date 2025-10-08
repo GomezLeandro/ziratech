@@ -7,8 +7,7 @@ const QuienesSomos = () => {
       <div className="quienes-somos-content">
         <h2>+ QUIÉNES SOMOS</h2>
         <p>
-          Somos ZIRA TECH, una Agencia de Marketing Digital compuesta por un equipo de profesionales apasio-
-          nados, con una amplia experiencia en las áreas de diseño,
+          Somos ZIRA TECH, una Agencia de Marketing Digital compuesta por un equipo de profesionales apasionados, con una amplia experiencia en las áreas de diseño,
           marketing y tecnología.
         </p>
         <p>
@@ -19,7 +18,7 @@ const QuienesSomos = () => {
         </p>
       </div>
       <div className="quienes-somos-image">
-        <img src="https://i.imgur.com/8i2h4oV.png" alt="Marketing" />
+        <img src="/aboutUs.png" alt="Marketing" />
       </div>
       <div className="quienes-somos-stats">
         <div>

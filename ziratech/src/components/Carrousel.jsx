@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 export const Carrousel = () => {
   return (
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
@@ -10,29 +11,28 @@ export const Carrousel = () => {
       </div>
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://tse2.mm.bing.net/th/id/OIP.mlYOLgAj1t5YMqXYrmehBwHaEK?cb=12&rs=1&pid=ImgDetMain&o=7&rm=3" className="d-block w-100" alt="First slide" />
-          <div className="carousel-caption d-none d-md-block">
+          <img src='/branding.jpg' className="d-block w-100" alt="First slide" />
+          <div className="carousel-caption d-none d-md-block" >
             <h1>BRANDING</h1>
             <p>Diseñamos marcas que conectan</p>
-            <button className="btn btn-primary">CONTACTANOS</button>
           </div>
+            <button className="btn btn-primary cta-boton" >CONTACTANOS</button>
         </div>
         <div className="carousel-item">
-          <img src="https://cdn.pixabay.com/photo/2022/02/11/06/07/animals-7006600_1280.jpg" className="d-block w-100" alt="Second slide" />
-           <div className="carousel-caption d-none d-md-block">
-            <h1>BRANDING</h1>
-            <p>Diseñamos marcas que conectan</p>
-            <button className="btn btn-primary">CONTACTANOS</button>
+          <img src='/marketing2.jpg' className="d-block w-100" alt="Second slide" />
+           <div className="carousel-caption d-none d-md-block ">
+            <h1>MARKETING DIGITAL</h1>
+            <p>Potenciamos tu marca con estrategias personalizadas</p>
           </div>
+            <button className="btn btn-primary cta-boton">CONTACTANOS</button>
         </div>
         <div className="carousel-item">
-          <img src="https://4.bp.blogspot.com/-Ke_9CRrmvP0/UyMhr3d1jeI/AAAAAAAACgk/7TiS6bjw7hE/s1600/Cachorros.jpg" className="d-block w-100" alt="Third slide" />
+          <img src='/desarrollo-web1.jpg' className="d-block w-100" alt="Third slide" />
            <div className="carousel-caption d-none d-md-block">
-            <h1>BRANDING</h1>
-            <p>Diseñamos marcas que conectan</p>
-            <button className="btn btn-primary">CONTACTANOS</button>
-          </div>
-        </div>
+            <h1>DISEÑO WEB</h1>
+            <p>Transformamos ideas en plataformas digitales</p>
+            </div>
+            <button className="btn btn-primary cta-boton" >CONTACTANOS </button>   
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -42,6 +42,7 @@ export const Carrousel = () => {
         <span className="carousel-control-next-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Next</span>
       </button>
+    </div>
     </div>
   );
 };

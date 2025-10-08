@@ -2,7 +2,7 @@
 .app-container {
   display: grid;
   /* La proporción de las columnas se ajusta para que el menú sea más angosto. */
-  grid-template-columns: 25% 75%; 
+  grid-template-columns: 20% 80%; 
 }
 
 /* Define el área del menú lateral en el grid */

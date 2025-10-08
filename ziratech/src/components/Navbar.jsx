@@ -1,11 +1,12 @@
 import React from 'react';
 import './Navbar.css';
+import isologo from '../../public/Isologo-ZT.ico'
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-logo">
-        ZT
+        <img className='logo' src={isologo} alt='Logo Ziratech'/>
       </div>
       <nav className="navbar-menu">
         <ul>

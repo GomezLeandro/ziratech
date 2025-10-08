@@ -1,4 +1,13 @@
-/* --- Estilos para el contenedor del carrusel --- */
+:root {
+  /* Se definen usando --nombre-variable: valor; */
+  --color-principal: #0096FF;        /* Azul vibrante */
+  --color-transparente-fondo: rgba(0, 150, 255, 0.85); /* Azul semitransparente */
+  --color-texto-claro: white;
+  --espaciado-lg: 40px;
+}
+
+
+
 .carousel {
   position: relative; /* Necesario para posicionar elementos hijos de forma absoluta */
   height: 100vh; /* Ocupa toda la altura de la pantalla */
@@ -14,17 +23,45 @@
 }
 
 /* --- Contenedor del texto y botón (el cuadro azul) --- */
+/* --- Posicionamiento del Recuadro Azul (Caption) --- */
 .carousel-caption {
+  /* Mantén el posicionamiento existente para el cuadro azul */
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(0, 191, 255, 0.8); /* Fondo azul semitransparente */
-  padding: 40px;
-  border-radius: 10px;
+  transform: translate(-50%, -40%);
+  background-color: rgba(0, 191, 255, 0.8);
+  padding: 20px 30px;
   color: white;
-  text-align: center;
-  width: 50%; /* Ancho del cuadro azul */
+  text-align: left;
+  min-width:70%;
+  max-height: fit-content;
+  margin-bottom: 0; /* Asegúrate de que no haya margen que lo empuje */
+}
+
+/* --- Posicionamiento del Botón (la nueva clase) --- */
+.cta-boton {
+  /* La clave es posicionarlo de forma absoluta */
+  position: absolute;
+  left: 24%;
+  /* Centrar horizontalmente */
+  transform: translateX(-50%);
+  /* Mueve la posición de TOP un poco más abajo que la caption (50%) */
+  top: 47%; 
+  /* Ajusta el margen superior para colocarlo justo debajo del recuadro */
+  /* El valor de 100px es un ejemplo, ajusta según el tamaño de tu caption */
+  margin-top: 100px; 
+}
+
+/* --- Estilos visuales para el botón --- */
+.btn-primary.cta-boton {
+  background-color: var(--color-principal); /* O el que prefieras */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 /* --- Estilos para el título y el párrafo --- */
@@ -36,13 +73,14 @@
 
 .carousel-caption p {
   font-size: 1.8em;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 /* --- Estilos para el botón --- */
 .carousel-caption .btn-primary {
   background-color: #00bfff;
   border: none;
+  max-width: 200px;
   border-radius: 20px;
   padding: 10px 30px;
   font-weight: bold;
@@ -52,9 +90,9 @@
 
 .carousel-caption .btn-primary:hover {
   background-color: #009acd;
-}
+} */
 
-/* --- Ocultar los indicadores y controles de Bootstrap --- */
+/* --- Ocultar los indicadores y controles de Bootstrap ---*/
 .carousel-indicators,
 .carousel-control-prev,
 .carousel-control-next {

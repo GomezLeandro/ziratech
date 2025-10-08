@@ -1,11 +1,11 @@
 import React from 'react';
 import Navbar from './components/Navbar';
-import { Carrousel } from './components/Carrousel';
+import { Carrousel } from './components/carrousel';
 import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
 import Portfolio from './components/Portfolio';
-import Contacto from './components/Contacto'; // Importa el nuevo componente
-import Footer from './components/Footer';   // Importa el nuevo componente
+import Contacto from './components/Contacto'; 
+import Footer from './components/Footer'; 
 import './App.css';
 
 const App = () => {
@@ -19,8 +19,8 @@ const App = () => {
         <QuienesSomos />
         <Servicios />
         <Portfolio />
-        <Contacto /> {/* Añade el componente de Contacto */}
-        <Footer />   {/* Añade el componente de Footer */}
+        <Contacto /> 
+        <Footer />  
       </div>
     </div>
   );
