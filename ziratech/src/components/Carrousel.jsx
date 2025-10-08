@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Carrousel = () => {
   return (
-    <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">
+    <div id="inicio" className="carousel slide" data-bs-ride="carousel">
       <div className="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -16,7 +16,7 @@ export const Carrousel = () => {
             <h1>BRANDING</h1>
             <p>Diseñamos marcas que conectan</p>
           </div>
-            <button className="btn btn-primary cta-boton" >CONTACTANOS</button>
+            <button className="btn btn-primary cta-boton"  onClick={()=>href=window.location.href = "#contacto"} >CONTACTANOS</button>
         </div>
         <div className="carousel-item">
           <img src='/marketing2.jpg' className="d-block w-100" alt="Second slide" />
@@ -24,7 +24,7 @@ export const Carrousel = () => {
             <h1>MARKETING DIGITAL</h1>
             <p>Potenciamos tu marca con estrategias personalizadas</p>
           </div>
-            <button className="btn btn-primary cta-boton">CONTACTANOS</button>
+            <button className="btn btn-primary cta-boton"  onClick={()=>href=window.location.href = "#contacto"}>CONTACTANOS</button>
         </div>
         <div className="carousel-item">
           <img src='/desarrollo-web1.jpg' className="d-block w-100" alt="Third slide" />
@@ -32,7 +32,7 @@ export const Carrousel = () => {
             <h1>DISEÑO WEB</h1>
             <p>Transformamos ideas en plataformas digitales</p>
             </div>
-            <button className="btn btn-primary cta-boton" >CONTACTANOS </button>   
+            <button className="btn btn-primary cta-boton" onClick={()=>href=window.location.href = "#contacto"}>CONTACTANOS </button>   
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>

@@ -36,7 +36,7 @@ const services = [
 
 const Servicios = () => {
   return (
-    <div className="servicios">
+    <div id="servicios" className="servicios">
       <h2>+ NUESTROS SERVICIOS</h2>
       <div className="servicios-grid">
         {services.map((service, index) => (

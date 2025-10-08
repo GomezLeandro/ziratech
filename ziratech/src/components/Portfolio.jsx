@@ -27,7 +27,7 @@ const Portfolio = () => {
     : projects.filter(project => project.category === activeCategory);
 
   return (
-    <div className="portfolio">
+    <div id="portfolio" className="portfolio">
       <h2>+ PORTFOLIO</h2>
       {/* --- Contenedor principal con layout de dos columnas --- */}
       <div className="portfolio-container">

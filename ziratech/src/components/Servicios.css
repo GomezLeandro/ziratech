@@ -1,11 +1,13 @@
 .servicios {
-  padding: 40px 20px;
+  padding: 10% 10%;
   background-color: #f0f0f0;
+  height: 100vh;
 }
 
 .servicios h2 {
+  
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 8%;
   color: #00bfff;
   font-weight: bold;
 }
@@ -13,7 +15,7 @@
 .servicios-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
+  gap: 40% 5%;
 }
 
 .servicio-item {

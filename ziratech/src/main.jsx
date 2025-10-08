@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import '/src/components/Carrousel.css'
 import '/src/components/QuienesSomos.css'
+import '/src/components/CountUp.css'
 import '/src/components/Servicios.css'
 import '/src/components/Portfolio.css'
 import '/src/components/Contacto.css'
