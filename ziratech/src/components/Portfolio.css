@@ -42,10 +42,10 @@
 
 /* --- Columna 2: Galería de proyectos --- */
 .portfolio-grid {
-  width: 80%; /* La galería ocupa el 80% del ancho */
+  width: 60%; /* La galería ocupa el 80% del ancho */
   display: grid;
   /* --- Dos columnas con un espacio de 20px entre ellas --- */
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
