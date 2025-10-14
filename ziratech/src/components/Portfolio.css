@@ -47,6 +47,7 @@
   /* --- Dos columnas con un espacio de 20px entre ellas --- */
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  min-height: 65vh;
 }
 
 /* --- Estilos de cada elemento del portafolio --- */
@@ -89,4 +90,20 @@
 .portfolio-item-overlay span {
   font-size: 0.9em;
   color: #666;
+}
+
+.paginacion-container{
+  margin-top: 5%;
+  display:flex;
+  justify-content:center;
+}
+
+
+.paginacion-container button{
+  background-color: transparent;
+  border: none;
+  margin-right: 2%;
+}
+.paginacion-container button:hover,.paginacion-container button.active{
+  color:#00bfff;
 }

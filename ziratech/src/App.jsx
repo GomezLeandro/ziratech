@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from './components/Navbar';
+import BackToTop from './components/BackToTopButton';
 import { Carrousel } from './components/carrousel';
 import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
@@ -11,9 +12,7 @@ import './App.css';
 const App = () => {
   return (
     <div className="app-container">
-      <div className="sidebar">
-        <Navbar />
-      </div>
+        <Navbar /> 
       <div className="main-content">
         <Carrousel />
         <QuienesSomos />
@@ -21,6 +20,7 @@ const App = () => {
         <Portfolio />
         <Contacto /> 
         <Footer />  
+        <BackToTop/>
       </div>
     </div>
   );
