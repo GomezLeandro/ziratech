@@ -1,13 +1,13 @@
 
 import React, { useState } from 'react';
 import  {projects, categories} from '../utils/PortfolioData.js'
-
+import './Portfolio.css';
 
 const Portfolio = () => {
   // --- Estados de filtrado y paginación ---
   const [activeCategory, setActiveCategory] = useState('Branding');
   const [paginaActual, setPaginaActual] = useState(1); // 👈 Nuevo estado: página actual
-  const elementosPorPagina = 6; // 👈 Constante para el número de elementos
+  const elementosPorPagina = 4; // 👈 Constante para el número de elementos
 
   // --- Paso 1: Filtrar proyectos según la categoría activa ---
   const filteredProjects = activeCategory === 'TODOS'
@@ -79,7 +79,7 @@ const Portfolio = () => {
                 onClick={() => cambiarPagina(paginaActual - 1)}
                 disabled={paginaActual === 1}
             >
-                &larr; Anterior
+                &larr; <span  className='indicadores-paginacion' >Anterior</span>
             </button>
 
             {/* Números de página */}
@@ -98,7 +98,7 @@ const Portfolio = () => {
                 onClick={() => cambiarPagina(paginaActual + 1)}
                 disabled={paginaActual === totalPaginas}
             >
-                Siguiente &rarr;
+                <span className='indicadores-paginacion'>Siguiente</span> &rarr;
             </button>
         </div>
       )}

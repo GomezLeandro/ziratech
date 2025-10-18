@@ -1,79 +1,111 @@
 :root {
   /* Se definen usando --nombre-variable: valor; */
-  --color-principal: #0096FF;        /* Azul vibrante */
-  --color-transparente-fondo: rgba(0, 150, 255, 0.85); /* Azul semitransparente */
+  --color-principal: #0096ff; /* Azul vibrante */
+  --color-transparente-fondo: rgba(
+    0,
+    150,
+    255,
+    0.85
+  ); /* Azul semitransparente */
   --color-texto-claro: white;
   --espaciado-lg: 40px;
 }
 
 
-.carousel-inner, .carousel-item {
-  height: 100vh;
+  .carousel-caption h1 {
+    font-size: clamp(2rem, 5vw, 2.5rem);
+  }
+
+  .carousel-caption p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .carousel-inner,
+  .carousel-item {
+    height: 100vh;
+  }
+
+  .carousel-item img {
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
+  }
+    .carousel-caption {
+    display: flex;
+    position:absolute;
+    left:16%;
+    bottom: 14%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(0, 191, 255, 0.8);
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    min-width: 260px;
+    max-width: 75%;
+    gap: 20px;
+    border-radius: 10px;
+    transform: translateY(-250px);
+  }
+    /* --- Estilo del título --- */
+  .carousel-caption h1 {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: bold;
+    
+    text-align: left;
+  }
+
+  /* --- Estilo del párrafo --- */
+  .carousel-caption p {
+    font-size: clamp(1.3rem, 2vw, 2.1rem);
+    margin: 0;
+    text-align: left;
+  }
+
+  /* --- Estilo del botón --- */
+  .cta-boton {
+    background-color: var(--color-principal);
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    transform: translateY(100px);
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  }
+
+  .cta-boton:hover {
+    background-color: #009acd;
+  }
+
+  .carousel-caption .btn-primary:hover {
+    background-color: #009acd;
+  }
+
+@media (max-width: 1200px) {
+  
+
+  /* --- Ocultar los indicadores y controles de Bootstrap ---*/
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
+
+  .carousel-caption {
+    min-height: 20vh; 
+  }
+    .carousel-inner,
+  .carousel-item {
+    height: 85vh;
+  }
+
+
 }
 
-.carousel-item img {
-  height: 100%;
-  object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin deformarse */
-}
 
 
-.carousel-caption .btn-primary:hover {
-  background-color: #009acd;
-} */
-
-/* --- Ocultar los indicadores y controles de Bootstrap ---*/
-.carousel-indicators,
-.carousel-control-prev,
-.carousel-control-next {
-  display: none; 
- }
- .carousel-caption {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;       /* Centra verticalmente */
-  background-color: rgba(0, 191, 255, 0.8);
-  padding: 10px 20px;
-  color: white;
-  text-align: center;          /* Centra el texto */
-  min-width: 65%;
-  max-width: 75%;
-  gap: 20px;  
-  min-height: 40vh;                 /* Espacio entre elementos */
-  border-radius: 10px;
-  margin-bottom: 20vh;        /* opcional */
-}
-
-/* --- Estilo del título --- */
-.carousel-caption h1 {
-  font-size: clamp(2.5rem, 4vw, 3.5rem); 
-  font-weight: bold;
-  margin-top: 10px;
-  text-align: left;
-}
-
-/* --- Estilo del párrafo --- */
-.carousel-caption p {
-  font-size: clamp(1.3rem, 2vw, 2.1rem);
-  margin: 0;
-  text-align: left;
-}
 
 
-/* --- Estilo del botón --- */
-.cta-boton {
-  background-color: var(--color-principal);
-  border: none;
-  border-radius: 20px;
-  padding: 10px 30px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  transform:translateY(100px)
- 
-}
-
-.cta-boton:hover {
-  background-color: #009acd;
-}
 

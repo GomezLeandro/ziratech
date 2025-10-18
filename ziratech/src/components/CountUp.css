@@ -6,4 +6,13 @@
 .quienes-somos-stats p {
     color:black;
     font-weight: 600;
+    font-size: clamp(12px, 1.8vw, 18px);
+}
+
+@media (max-width: 768px) {
+   .quienes-somos-stats p {
+    color:black;
+    font-weight: 600;
+    font-size: clamp(12px, 2.5vw, 18px);
+}
 }

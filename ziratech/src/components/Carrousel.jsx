@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Carrousel.css';
 export const Carrousel = () => {
   return (
     <div id="carouselExampleIndicators" className="carousel slide" data-bs-ride="carousel">

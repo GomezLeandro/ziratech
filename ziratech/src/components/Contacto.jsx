@@ -2,6 +2,8 @@ import React from 'react';
 import isologo from '/Isologo-ZT.ico'
 import { FaLinkedin, FaInstagram,FaEnvelope } from 'react-icons/fa'
 import {FaLocationDot} from 'react-icons/fa6'
+import './Contacto.css';
+
 const Contacto = () => {
   return (
     <section id="contacto" className="contacto-section">

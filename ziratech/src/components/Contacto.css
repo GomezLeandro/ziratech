@@ -37,7 +37,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 50px;
-  width:70%;
+  width:85%;
 }
 
 .contacto-info p {
@@ -93,4 +93,27 @@
 
 .btn-contactanos:hover {
   background-color: #009acd;
+}
+
+@media (max-width: 768px) {
+ .contacto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  margin-bottom: 50px;
+  width:70%;
+}
+}
+@media (min-width: 768px ) and (max-width: 1200px) {
+ .contacto-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  
+  margin-bottom: 50px;
+  width:70%;
+}
 }

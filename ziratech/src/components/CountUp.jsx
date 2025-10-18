@@ -1,6 +1,7 @@
 import React from 'react';
 import CountUp from 'react-countup';
 import { useInView } from 'react-intersection-observer'; 
+import './CountUp.css';
 
 export function ContadorEstadistica({ endValue, label, prefix = '', suffix = '' }) {
   
@@ -11,7 +12,7 @@ export function ContadorEstadistica({ endValue, label, prefix = '', suffix = '' 
   });
 
   return (
-    <div className="col-lg-4 col-md-6 col-12 mb-4">
+    <div >
       <div className="card h-100 p-3" style={{backgroundColor:'transparent',border:'none' , color:'black'}}>
         <div className="card-body text-center" ref={ref}> {/*  Adjuntamos el ref al contenedor */}
           

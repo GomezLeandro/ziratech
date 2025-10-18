@@ -1,53 +1,181 @@
+/* ============================
+   SECCIÓN QUIÉNES SOMOS
+   ============================ */
 .quienes-somos {
   display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-}
-
-.quienes-somos-content {
-  display:flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-  padding-top: 20px;
-}
-.quienes-somos-parrafos{
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 8%;
-  margin-left: 13%;
-  width:60%;
-  font-size: 1.3rem;
-}
-
-
-.quienes-somos-title{
-  display:flex;
-}
-
-.quienes-somos-content div h2,.quienes-somos-content div span{
-  display:flex;
-  font-size: 2.5rem;
   justify-content: center;
-  padding-top: 15%;
-  color:#00bfff;
+  gap: 40px;
+  padding: 60px 20px;
+  margin: 0 auto;
 }
 
+/* Contenedor interno (texto + imagen) */
+.quienes-somos-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* ============================
+   BLOQUE DE TEXTO
+   ============================ */
+.quienes-somos-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+
+}
+
+.quienes-somos-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 5%;
+}
+
+.quienes-somos-title h2 {
+  color: #00b7ff;
+  font-weight: 700;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+ 
+}
+
+.quienes-somos-title span {
+  color: #00b7ff;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.quienes-somos-parrafos {
+  color: #333;
+  line-height: 1.6;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+  width:80%;
+  
+}
+
+/* ============================
+   BLOQUE DE IMAGEN
+   ============================ */
 .quienes-somos-image {
-  flex: 1;
+  flex: 1 1 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .quienes-somos-image img {
-  width: 80%;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* ============================
+   BLOQUE DE CONTADORES (ESTADÍSTICAS)
+   ============================ */
 .quienes-somos-stats {
   width: 100%;
+  background-color: #00bfff; /* Azul corporativo */
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.quienes-somos-stats .row {
   display: flex;
-  justify-content: space-around;
-  background-color: #00bfff;
-  color: white;
-  padding: 20px;
-  height:270px;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+
+/* Cada contador individual */
+.contador-estadistica {
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.contador-estadistica h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.contador-estadistica p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+
+
+/* ============================
+   MEDIA QUERY (TABLET / ESCRITORIO)
+   ============================ */
+@media (min-width: 768px) {
+  .quienes-somos-stats .row {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0px;
+  }
+  .row>* {
+     flex-shrink: none;
+     width: max-content;
+     max-width:33%;
+    padding-right:0;
+     padding-left:0; 
+    margin-top: 0;
+}
+
+  .contador-estadistica h3 {
+    font-size: 3.5rem;
+  }
+
+  .contador-estadistica p {
+    font-size: 1.1rem;
+  }
+  .quienes-somos-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+    padding: 0 0px;
+  }
+
+  .quienes-somos-content {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+  }
+
+  .quienes-somos-image {
+    max-width: 50%;
+  }
+
+  .quienes-somos-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .quienes-somos-parrafos {
+    width:70%;
+    margin-left: 15%;
+}
+.quienes-somos-title {
+  margin-bottom: 15%;;
+}
 }

@@ -18,7 +18,7 @@
 
 /* --- Columna 1: Submenú de categorías --- */
 .portfolio-submenu {
-  width: 20%; /* El submenú ocupa el 20% del ancho */
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,18 +33,17 @@
   font-weight: 500;
   color: #666;
   transition: color 0.3s ease;
+  white-space: nowrap;
 }
 
-/* --- Estilo del botón activo en el submenú (en azul) --- */
 .portfolio-submenu button.active {
   color: #00bfff;
 }
 
 /* --- Columna 2: Galería de proyectos --- */
 .portfolio-grid {
-  width: 60%; /* La galería ocupa el 80% del ancho */
+  width: 60%;
   display: grid;
-  /* --- Dos columnas con un espacio de 20px entre ellas --- */
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   min-height: 65vh;
@@ -54,7 +53,7 @@
 .portfolio-item {
   position: relative;
   overflow: hidden;
-  border-radius: 0; /* Quitamos el borde redondeado */
+  border-radius: 0;
 }
 
 .portfolio-item img {
@@ -71,14 +70,13 @@
   background: white;
   color: black;
   padding: 20px;
-  transform: translateY(100%); /* Inicialmente, el overlay está fuera de la vista (abajo) */
-  transition: transform 0.3s ease; /* Transición suave para el efecto de deslizamiento */
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
   text-align: center;
 }
 
-/* --- Mostrar el overlay al pasar el ratón sobre el elemento --- */
 .portfolio-item:hover .portfolio-item-overlay {
-  transform: translateY(0); /* Al pasar el ratón, el overlay se desliza a su posición original */
+  transform: translateY(0);
 }
 
 .portfolio-item-overlay h3 {
@@ -92,18 +90,69 @@
   color: #666;
 }
 
-.paginacion-container{
+/* --- Paginación --- */
+.paginacion-container {
   margin-top: 5%;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
 }
 
-
-.paginacion-container button{
+.paginacion-container button {
   background-color: transparent;
   border: none;
   margin-right: 2%;
 }
-.paginacion-container button:hover,.paginacion-container button.active{
-  color:#00bfff;
+
+.paginacion-container button:hover,
+.paginacion-container button.active {
+  color: #00bfff;
+}
+
+/* --- Responsive: móvil y tablet --- */
+@media (max-width: 768px) {
+  .portfolio-container {
+    flex-direction: column; /* Submenú arriba */
+    gap: 20px;
+  }
+
+  .portfolio-submenu {
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: auto; /* scroll horizontal */
+    gap: 15px;
+    padding-bottom: 10px;
+    scrollbar-width: none; /* Oculta el scrollbar en Firefox */
+  }
+
+  .portfolio-submenu::-webkit-scrollbar {
+    display: none; /* Oculta el scrollbar en Chrome/Safari */
+  }
+
+  .portfolio-submenu button {
+    flex: 0 0 auto; /* Evita que los botones se reduzcan */
+    padding: 8px 14px;
+    font-size: 0.9em;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+  }
+
+  .portfolio-submenu button:hover {
+    background-color: rgba(0, 191, 255, 0.1);
+  }
+
+  .portfolio-submenu button.active {
+    color: #00bfff;
+    font-weight: 600;
+    border-bottom: 2px solid #00bfff;
+  }
+
+  .portfolio-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .indicadores-paginacion {
+    display: none;
+  }
 }
