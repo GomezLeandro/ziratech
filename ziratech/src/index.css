@@ -21,8 +21,9 @@
 /* Estilos globales etiquetas */
 
 
-a:hover {
-  color: var(--color-principal);
+ul li a:hover,
+ul li a:focus {
+    color: var(--color-principal); 
 }
 
 body {

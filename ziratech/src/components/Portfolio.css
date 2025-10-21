@@ -9,6 +9,7 @@
 .portfolio-container {
   display: flex;
   gap: 40px; /* Espacio entre el submenú y la galería */
+  margin-top: 5%;
 }
 
 /* --- Columna 1: Submenú de categorías --- */
@@ -30,6 +31,12 @@
   transition: color 0.3s ease;
   white-space: nowrap;
 }
+.portfolio-submenu button:hover {
+ color: var(--color-principal); 
+ }
+ .portfolio-submenu button.active {
+  color:var(--color-principal);
+}
 
 .paginacion-dots {
     /* Esto hace que el <span> se alinee correctamente con el botón */
@@ -39,9 +46,8 @@
     height: 40px; 
     border: none;margin-right: 15px; /* Quita el borde no deseado */
 }
-.portfolio-submenu button.active {
-  color:var(--color-primario);
-}
+
+
 
 /* --- Columna 2: Galería de proyectos --- */
 .portfolio-grid {
@@ -62,6 +68,7 @@
 .portfolio-item img {
   width: 100%;
   display: block;
+  max-width: 250px;
 }
 
 /* --- Overlay que aparece desde abajo --- */
@@ -108,7 +115,7 @@
 
 .paginacion-container button:hover,
 .paginacion-container button.active {
-  color: var(--color-primario);
+  color: var(--color-principal);
 }
 
 /* --- Responsive: móvil y tablet --- */
@@ -142,13 +149,13 @@
   }
 
   .portfolio-submenu button:hover {
-    background-color: var(--color-primario);
+   color: var(--color-principal);
   }
 
   .portfolio-submenu button.active {
-    color: var(--color-primario);
+    color: var(--color-principal);
     font-weight: 600;
-    border-bottom: 2px solid var(--color-primario);
+    border-bottom: 2px solid var(--color-principal);
   }
 
   .portfolio-grid {

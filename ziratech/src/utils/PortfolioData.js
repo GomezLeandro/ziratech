@@ -37,7 +37,7 @@ export const projects = [
     { id: 39, category: 'Diseño Web', title: 'Aulas Digitales', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988877/portfolio_web1_eo2h4i.jpg' },
     { id: 40, category: 'Diseño Web', title: 'SMID Propiedades', image:' https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988878/portfolio_web2_uqsaup.jpg'},
     { id: 41, category: 'Diseño Web', title: 'Rix', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988879/portfolio_web3_igaymw.jpg' },
-    { id: 42, category: 'Diseño Web', title: 'MM Ingenieria', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,v1760988881/portfolio_web4_xynhtx.jpg' },
+    { id: 42, category: 'Diseño Web', title: 'MM Ingenieria', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988881/portfolio_web4_xynhtx.jpg' },
     { id: 43, category: 'Diseño Web', title: 'Astra', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988882/portfolio_web5_mvfdqc.jpg'},
     { id: 44, category: 'Diseño Web', title: 'Wini Ingredientes', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988886/portfolio_web6_vcu4a0.jpg' },
     { id: 45, category: 'Diseño Web', title: 'Artistique', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988885/portfolio_web7_kcycuw.jpg'},
