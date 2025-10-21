@@ -39,7 +39,7 @@ const QuienesSomos = () => {
         </div>
 
         <div className="quienes-somos-image">
-          <img src="/aboutUs.png" alt="Marketing" />
+          <img src="https://res.cloudinary.com/dosdl7yqj/image/upload/f_auto,q_auto/v1760988729/top-view-of-creative-designer-brainstorming-ducume-2024-11-28-21-43-22-utc_xhdpg4.jpg" alt="Marketing" />
         </div>
       </div>
 

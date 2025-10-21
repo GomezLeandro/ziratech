@@ -1,98 +1,48 @@
-// --- Imports de Imágenes (Asegúrate que estas rutas sean correctas) ---
-import branding1 from '/portfolio/portfolio_branding1.jpg';
-import branding2 from '/portfolio/portfolio_branding2.jpg';
-import branding3 from '/portfolio/portfolio_branding3.jpg';
-import branding4 from '/portfolio/portfolio_branding4.jpg';
-import branding5 from '/portfolio/portfolio_branding5.jpg';
-import branding6 from '/portfolio/portfolio_branding6.jpg';
-import branding7 from '/portfolio/portfolio_branding7.jpg';
-import branding8 from '/portfolio/portfolio_branding8.jpg';
-import branding9 from '/portfolio/portfolio_branding9.jpg';
-import branding10 from '/portfolio/portfolio_branding10.jpg';
-import branding11 from '/portfolio/portfolio_branding11.jpg';
-import branding12 from '/portfolio/portfolio_branding12.jpg';
-import branding13 from '/portfolio/portfolio_branding13.jpg';
-import diseno1 from '/portfolio/portfolio_folleteria1.jpg';
-import diseno2 from '/portfolio/portfolio_folleteria2.jpg';
-import diseno3 from '/portfolio/portfolio_folleteria3.jpg';
-import diseno4 from '/portfolio/portfolio_folleteria4.jpg';
-import diseno5 from '/portfolio/portfolio_folleteria5.jpg';
-import diseno6 from '/portfolio/portfolio_folleteria6.jpg';
-import diseno7 from '/portfolio/portfolio_folleteria7.jpg';
-import diseno8 from '/portfolio/portfolio_folleteria8.jpg';
-import diseno9 from '/portfolio/portfolio_folleteria9.jpg';
-import diseno10 from '/portfolio/portfolio_folleteria10.jpg';
-import diseno11 from '/portfolio/portfolio_folleteria11.jpg';
-import diseno12 from '/portfolio/portfolio_folleteria12.jpg';
-import diseno13 from '/portfolio/portfolio_folleteria13.jpg';
-import diseno14 from '/portfolio/portfolio_folleteria14.jpg';
-import diseno15 from '/portfolio/portfolio_folleteria15.jpg';
-import diseno16 from '/portfolio/portfolio_folleteria16.jpg';
-import diseno17 from '/portfolio/portfolio_folleteria17.jpg';
-import diseno18 from '/portfolio/portfolio_folleteria18.jpg';
-import diseno19 from '/portfolio/portfolio_folleteria19.jpg';
-import diseno20 from '/portfolio/portfolio_folleteria20.jpg';
-import diseno21 from '/portfolio/portfolio_folleteria21.jpg';
-import diseno22 from '/portfolio/portfolio_folleteria22.jpg';
-import diseno23 from '/portfolio/portfolio_folleteria23.jpg';
-import web1 from '/portfolio/portfolio_web1.jpg';
-import web2 from '/portfolio/portfolio_web2.jpg';
-import web3 from '/portfolio/portfolio_web3.jpg';
-import web4 from '/portfolio/portfolio_web4.jpg';
-import web5 from '/portfolio/portfolio_web5.jpg';
-import web6 from '/portfolio/portfolio_web6.jpg';
-import web7 from '/portfolio/portfolio_web7.jpg';
-import web8 from '/portfolio/portfolio_web8.jpg';
-import web9 from '/portfolio/portfolio_web9.jpg';
-
-
-// --- Array de Proyectos (exportado) ---
+// --- Array de Proyectos (exportado) alojados en cloudinary.com---
 export const projects = [
-    { id: 1, category: 'Branding', title: 'Aulas Digitales', image: branding1},
-    { id: 2, category: 'Branding', title: 'Club 54', image: branding2 },
-    { id: 3, category: 'Branding', title: 'GAV Dermoéstetica', image: branding3 },
-    { id: 4, category: 'Branding', title: 'Laugh & Care', image: branding4 },
-    { id: 5, category: 'Branding', title: 'Laugh & Care', image: branding5 },
-    { id: 6, category: 'Branding', title: 'Marcelo Marino Arquitectura', image:branding6 },
-    { id: 7, category: 'Branding', title: 'Nomadland ', image: branding7 },
-    { id: 8, category: 'Branding', title: 'Picadas del Pilar', image: branding8 },
-    { id: 9, category: 'Branding', title: 'Paw Print', image: branding9 },
-    { id: 10, category: 'Branding', title: 'RIX', image: branding10 },
-    { id: 11, category: 'Branding', title: 'SMID Propiedades', image: branding11 },
-    { id: 12, category: 'Branding', title: 'Wini ingredientes', image: branding12 },
-    { id: 13, category: 'Branding', title: 'Ationet', image: branding13 },
-    { id: 16, category: 'Diseño Grafico', title: 'Nomadland', image: diseno1 },
-    { id: 17, category: 'Diseño Grafico', title: 'Clover', image: diseno2},
-    { id: 18, category: 'Diseño Grafico', title: 'Peponas Cakes', image: diseno3},
-    { id: 19, category: 'Diseño Grafico', title: 'Picadas del Pilar', image:diseno4 },
-    { id: 20, category: 'Diseño Grafico', title: 'SMID Propiedades', image: diseno5},
-    { id: 21, category: 'Diseño Grafico', title: 'SMID Propiedades', image: diseno6 },
-    { id: 22, category: 'Diseño Grafico', title: 'Paw Print', image: diseno7 },
-    { id: 23, category: 'Diseño Grafico', title: 'Paw Print', image: diseno8 },
-    { id: 24, category: 'Diseño Grafico', title: 'Paw Print', image: diseno9 },
-    { id: 25, category: 'Diseño Grafico', title: 'Paw Print', image: diseno10 },
-    { id: 26, category: 'Diseño Grafico', title: 'Paw Print', image: diseno11 },
-    { id: 27, category: 'Diseño Grafico', title: 'Paw Print', image:diseno12 },
-    { id: 28, category: 'Diseño Grafico', title: 'Paw Print', image: diseno13 },
-    { id: 29, category: 'Diseño Grafico', title: 'Paw Print', image: diseno14 },
-    { id: 30, category: 'Diseño Grafico', title: 'Paw Print', image: diseno15},
-    { id: 31, category: 'Diseño Grafico', title: 'AMET', image: diseno16},
-    { id: 32, category: 'Diseño Grafico', title: 'RIX', image: diseno17 },
-    { id: 33, category: 'Diseño Grafico', title: 'RIX', image: diseno18 },
-    { id: 34, category: 'Diseño Grafico', title: 'RIX', image: diseno19 },
-    { id: 35, category: 'Diseño Grafico', title: 'RIX', image: diseno20 },
-    { id: 36, category: 'Diseño Grafico', title: 'RIX', image: diseno21 },
-    { id: 37, category: 'Diseño Grafico', title: 'Nomadland', image: diseno22 },
-    { id: 38, category: 'Diseño Grafico', title: 'Aulas Digitales', image: diseno23 },
-    { id: 39, category: 'Diseño Web', title: 'Aulas Digitales', image: web1 },
-    { id: 40, category: 'Diseño Web', title: 'SMID Propiedades', image: web2 },
-    { id: 41, category: 'Diseño Web', title: 'Rix', image: web3 },
-    { id: 42, category: 'Diseño Web', title: 'MM Ingenieria', image: web4 },
-    { id: 43, category: 'Diseño Web', title: 'Astra', image: web5 },
-    { id: 44, category: 'Diseño Web', title: 'Wini Ingredientes', image: web6 },
-    { id: 45, category: 'Diseño Web', title: 'Artistique', image: web7 },
-    { id: 46, category: 'Diseño Web', title: 'Peponas cakes', image: web8 },
-    { id: 47, category: 'Diseño Web', title: 'Paw Print', image: web9 },
+    { id: 1, category: 'Branding', title: 'Aulas Digitales', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988818/portfolio_branding1_tis9kh.jpg'},
+    { id: 2, category: 'Branding', title: 'Club 54', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988819/portfolio_branding2_sjbmjv.jpg' },
+    { id: 3, category: 'Branding', title: 'GAV Dermoéstetica', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988820/portfolio_branding3_eco3is.jpg'},
+    { id: 4, category: 'Branding', title: 'Laugh & Care', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988822/portfolio_branding5_hwkqfu.jpg'},
+    { id: 5, category: 'Branding', title: 'Laugh & Care', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988821/portfolio_branding4_ddclfa.jpg'},
+    { id: 6, category: 'Branding', title: 'Marcelo Marino Arquitectura', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988823/portfolio_branding6_uedxgu.jpg'},
+    { id: 7, category: 'Branding', title: 'Nomadland ', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988825/portfolio_branding7_fmadxw.jpg'},
+    { id: 8, category: 'Branding', title: 'Picadas del Pilar', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988826/portfolio_branding8_jh48eh.jpg' },
+    { id: 9, category: 'Branding', title: 'Paw Print', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988827/portfolio_branding9_n6u6to.jpg' },
+    { id: 10, category: 'Branding', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988828/portfolio_branding10_oa8xjp.jpg'},
+    { id: 11, category: 'Branding', title: 'SMID Propiedades', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988830/portfolio_branding11_mtrelo.jpg'},
+    { id: 12, category: 'Branding', title: 'Wini ingredientes', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988831/portfolio_branding12_y9vqqs.jpg'},
+    { id: 16, category: 'Diseño Gráfico', title: 'Nomadland', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988943/portfolio_folleteria1_rblfsw.jpg' },
+    { id: 17, category: 'Diseño Gráfico', title: 'Clover', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988945/portfolio_folleteria2_dhe4ul.jpg'},
+    { id: 18, category: 'Diseño Gráfico', title: 'Peponas Cakes', image:' https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988946/portfolio_folleteria3_u46f7e.jpg'},
+    { id: 19, category: 'Diseño Gráfico', title: 'Picadas del Pilar', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988948/portfolio_folleteria4_a6jaww.jpg' },
+    { id: 20, category: 'Diseño Gráfico', title: 'SMID Propiedades', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988950/portfolio_folleteria5_mmielv.jpg'},
+    { id: 21, category: 'Diseño Gráfico', title: 'SMID Propiedades', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988952/portfolio_folleteria6_gw8g3t.jpg' },
+    { id: 22, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988953/portfolio_folleteria7_ni7h1o.jpg' },
+    { id: 23, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988955/portfolio_folleteria8_ej9wd6.jpg' },
+    { id: 24, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988957/portfolio_folleteria9_qxtrmk.jpg' },
+    { id: 25, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988959/portfolio_folleteria10_glgt7a.jpg' },
+    { id: 26, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988960/portfolio_folleteria11_wk18mt.jpg' },
+    { id: 27, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988962/portfolio_folleteria12_n3pask.jpg' },
+    { id: 28, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988964/portfolio_folleteria13_pduuhf.jpg' },
+    { id: 29, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988966/portfolio_folleteria14_i8oewc.jpg '},
+    { id: 31, category: 'Diseño Gráfico', title: 'AMET', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988971/portfolio_folleteria16_uvx5tn.jpg'},
+    { id: 32, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988973/portfolio_folleteria17_nk6fry.jpg '},
+    { id: 33, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988975/portfolio_folleteria18_ecjexl.jpg'},
+    { id: 34, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988978/portfolio_folleteria19_xupakn.jpg'},
+    { id: 35, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988980/portfolio_folleteria20_cqfbma.jpg '},
+    { id: 36, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988984/portfolio_folleteria21_uig24h.jpg' },
+    { id: 37, category: 'Diseño Gráfico', title: 'Nomadland', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988986/portfolio_folleteria22_u0ld3r.jpg' },
+    { id: 38, category: 'Diseño Gráfico', title: 'Aulas Digitales', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988988/portfolio_folleteria23_axgi4h.jpg'},
+    { id: 39, category: 'Diseño Web', title: 'Aulas Digitales', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988877/portfolio_web1_eo2h4i.jpg' },
+    { id: 40, category: 'Diseño Web', title: 'SMID Propiedades', image:' https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988878/portfolio_web2_uqsaup.jpg'},
+    { id: 41, category: 'Diseño Web', title: 'Rix', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988879/portfolio_web3_igaymw.jpg' },
+    { id: 42, category: 'Diseño Web', title: 'MM Ingenieria', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,v1760988881/portfolio_web4_xynhtx.jpg' },
+    { id: 43, category: 'Diseño Web', title: 'Astra', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988882/portfolio_web5_mvfdqc.jpg'},
+    { id: 44, category: 'Diseño Web', title: 'Wini Ingredientes', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988886/portfolio_web6_vcu4a0.jpg' },
+    { id: 45, category: 'Diseño Web', title: 'Artistique', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988885/portfolio_web7_kcycuw.jpg'},
+    { id: 46, category: 'Diseño Web', title: 'Peponas cakes', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988886/portfolio_web8_bcardm.jpg'},
+    { id: 47, category: 'Diseño Web', title: 'Paw Print', image:' https://res.cloudinary.com/dosdl7yqj/image/upload/w_400,h_400,c_fill,f_auto,q_auto/v1760988888/portfolio_web9_x3axl8.jpg'},
 ];
 
 // --- Constante de Categorías (exportada) ---

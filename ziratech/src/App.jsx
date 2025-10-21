@@ -14,7 +14,6 @@ const App = () => {
   return (
     <div className="app-container">
         <Navbar /> 
-      <div className="main-content">
         <Carrousel />
         <QuienesSomos />
         <Servicios />
@@ -22,7 +21,7 @@ const App = () => {
         <Contacto /> 
         <Footer />  
         <BackToTop/>
-      </div>
+     
     </div>
   );
 };

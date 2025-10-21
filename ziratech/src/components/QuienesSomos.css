@@ -36,16 +36,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width:95%;
   gap: 8px;
   margin-bottom: 5%;
 }
-
 .quienes-somos-title h2 {
-  color: #00b7ff;
-  font-weight: 700;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
- 
+  margin-left: 0;;
 }
+
 
 .quienes-somos-title span {
   color: #00b7ff;
@@ -53,13 +51,7 @@
   font-size: 2rem;
 }
 
-.quienes-somos-parrafos {
-  color: #333;
-  line-height: 1.6;
-  font-size: clamp(1rem, 1.2vw, 1.2rem);
-  width:80%;
-  
-}
+
 
 /* ============================
    BLOQUE DE IMAGEN
@@ -73,7 +65,7 @@
 
 .quienes-somos-image img {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
@@ -85,8 +77,8 @@
    ============================ */
 .quienes-somos-stats {
   width: 100%;
-  background-color: #00bfff; /* Azul corporativo */
-  color: #fff;
+  background-color: var(--color-principal); /* Azul corporativo */
+  color: var(--color-texto-claro);
   text-align: center;
   padding: 60px 20px;
 }
@@ -96,6 +88,10 @@
   flex-direction: row;
   align-items: center;
   gap: 30px;
+}
+
+.quienes-somos-stats p {
+text-align: center;
 }
 
 
@@ -109,22 +105,34 @@
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
-  color: #fff;
+  color: var(--color-texto-claro);
 }
 
 .contador-estadistica p {
   font-size: 1rem;
   font-weight: 500;
   margin: 0;
-  color: #fff;
+  color:var(--color-texto-claro);
 }
 
+  div.card-body.text-center {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 
 
 /* ============================
    MEDIA QUERY (TABLET / ESCRITORIO)
    ============================ */
 @media (min-width: 768px) {
+
+  .quienes-somos-parrafos {
+  line-height: 1.6;
+  width:80%;
+}
   .quienes-somos-stats .row {
     flex-direction: row;
     justify-content: center;
@@ -137,7 +145,7 @@
      max-width:33%;
     padding-right:0;
      padding-left:0; 
-    margin-top: 0;
+     margin-top: 0;
 }
 
   .contador-estadistica h3 {
