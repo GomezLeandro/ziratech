@@ -12,7 +12,7 @@ export function ContadorEstadistica({ endValue, label, prefix = '', suffix = '' 
   });
 
   return (
-    <div >
+    <div className='container-count-up'>
       <div className="card h-100 p-3" style={{backgroundColor:'transparent',border:'none' , color:'black'}}>
         <div className="card-body text-center" ref={ref}> {/*  Adjuntamos el ref al contenedor */}
           

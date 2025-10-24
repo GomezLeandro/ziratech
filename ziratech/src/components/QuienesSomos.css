@@ -60,39 +60,39 @@
   flex: 1 1 400px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 .quienes-somos-image img {
   width: 100%;
-  max-width: 400px;
+  max-height: 550px;
   height: auto;
   border-radius: 8px;
   object-fit: cover;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* ============================
-   BLOQUE DE CONTADORES (ESTADÍSTICAS)
-   ============================ */
-.quienes-somos-stats {
+
+ .quienes-somos-stats {
   width: 100%;
-  background-color: var(--color-principal); /* Azul corporativo */
+  background-color: var(--color-principal); 
   color: var(--color-texto-claro);
   text-align: center;
-  padding: 60px 20px;
-}
+  
+} 
 
 .quienes-somos-stats .row {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 30px;
+  justify-content: center;
+  width:80%;
+  margin: 0 auto;
 }
+  
 
-.quienes-somos-stats p {
-text-align: center;
-}
+
+
 
 
 /* Cada contador individual */
@@ -110,24 +110,44 @@ text-align: center;
 
 .contador-estadistica p {
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 800;
   margin: 0;
   color:var(--color-texto-claro);
 }
 
+div.card.h-100.p-3 {
+    width:70vw;
+    display:contents
+  }
+
+p.lead.text-muted{
+    text-align: center;
+}
   div.card-body.text-center {
-    
+    max-width: 20vw;
     display: flex;
     flex-direction: column;
     align-items: center;
 
   }
 
+  .row>* {
+     flex-shrink: 0;
+     width: initial ;
+     max-width: initial;
+     padding-right: 0px;
+     padding-left: 0px;
+     margin-top: 0px;}
+
 
 /* ============================
    MEDIA QUERY (TABLET / ESCRITORIO)
    ============================ */
 @media (min-width: 768px) {
+ 
+  div.card.h-100.p-3 {
+    width:100%;
+  }
 
   .quienes-somos-parrafos {
   line-height: 1.6;
@@ -139,22 +159,7 @@ text-align: center;
     flex-wrap: nowrap;
     gap: 0px;
   }
-  .row>* {
-     flex-shrink: none;
-     width: max-content;
-     max-width:33%;
-    padding-right:0;
-     padding-left:0; 
-     margin-top: 0;
-}
-
-  .contador-estadistica h3 {
-    font-size: 3.5rem;
-  }
-
-  .contador-estadistica p {
-    font-size: 1.1rem;
-  }
+ 
   .quienes-somos-inner {
     flex-direction: row;
     justify-content: space-between;
@@ -172,6 +177,7 @@ text-align: center;
 
   .quienes-somos-image {
     max-width: 50%;
+     justify-content: center;
   }
 
   .quienes-somos-image img {

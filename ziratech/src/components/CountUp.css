@@ -1,18 +1,43 @@
-
-.quienes-somos-stats span {
-    color:black;
-}
-
-.quienes-somos-stats p {
+ .container-count-up p {
     color:black;
     font-weight: 600;
     font-size: clamp(12px, 1.8vw, 18px);
 }
 
+ .container-count-up span {
+    color:black;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+div.card-body.text-center{
+    max-width: 20vw;
+}
+
+.container-count-up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 40px;
+}
 @media (max-width: 768px) {
-   .quienes-somos-stats p {
+.container-count-up p {
     color:black;
     font-weight: 600;
-    font-size: clamp(12px, 2.5vw, 18px);
+    font-size:1.3rem;
+}
+ .container-count-up span {
+    color:black;
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.container-count-up {
+    margin-left: 0px;
+}
+
+div.card-body.text-center{
+    max-width: 80%;
 }
 }

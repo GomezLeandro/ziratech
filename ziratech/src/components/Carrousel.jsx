@@ -13,7 +13,7 @@ export const Carrousel = () => {
         <div className="carousel-item active">
           <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800,h_450,c_fill,f_auto,q_auto/v1760988678/branding_l66bxt.jpg' className="d-block w-100" alt="First slide" />
           <div className="carousel-caption ">
-            <h1>BRANDING</h1>
+            <h1 translate='no'>BRANDING</h1>
             <p>Diseñamos marcas que conectan.</p>
             <button onClick={() => window.location.href = "#contacto"}>CONTACTANOS</button>
           </div>

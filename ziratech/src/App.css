@@ -1,9 +1,9 @@
 .app-container {
   padding-left: 288px;
-  width:100vw;
-  overflow-x:hidden; 
+  width:100%;
   overflow-y:auto;
   scroll-behavior: smooth; 
+  box-sizing: border-box;
 }
 
 /* 1. Estilos para el estado NO visible (Corregido para centrar) */
@@ -44,6 +44,8 @@
 
 @media (max-width: 1200px) {
   .app-container {
-    padding-left: 0; /* ✅ En mobile NO hay navbar fijo */
+    padding-left: 0;
+    display:flex;
+    flex-direction: column;
   }
-}
+  }

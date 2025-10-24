@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import BackToTop from './components/BackToTopButton';
-import { Carrousel } from './components/carrousel';
+import { Carrousel } from './components/Carrousel';
 import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
 import Portfolio from './components/Portfolio';

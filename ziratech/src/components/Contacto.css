@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+.btn-contactanos{
+  background-color: var(--color-principal);
+  color:var(--color-texto-claro)
+}
 /* --- Encabezado con ícono y título --- */
 .contacto-header {
   align-items: center;

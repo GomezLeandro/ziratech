@@ -50,7 +50,7 @@ h1 {
 h2 {
   color: var(--color-principal);
   font-weight: 700;
-  font-size: clamp(1.3rem, 3vw, 3.5rem);
+  font-size: clamp(1.9rem, 3vw, 3.5rem);
   text-align: center;
 }
 
@@ -68,11 +68,11 @@ button {
   color:var(--color-terciario);
   transition: border-color 0.25s;
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-  border: 1px solid var(--color-terciario);
+  
 }
 
 button:hover {
