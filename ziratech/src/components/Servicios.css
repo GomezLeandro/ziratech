@@ -10,6 +10,9 @@ width:100%
 margin-top:60px;
 text-align:center; /* Centramos el título */
 }
+.service-image{
+    width: 30px;
+}
 
 .servicios-grid {
 margin-top:100px;

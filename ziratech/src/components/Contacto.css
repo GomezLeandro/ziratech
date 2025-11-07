@@ -67,12 +67,53 @@
   height: 150px;
   resize: none;
 }
+/* Estilos para el Toast Feedback */
+.toast-feedback {
+    /* Posicionamiento fijo en la parte inferior central */
+    position: fixed;
+    bottom: 20px; /* Separación del borde inferior */
+    left: 60%;
+    transform: translateX(-50%);
+    
+    /* Apariencia */
+    padding: 15px 25px;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+    color: var(--color-texto-claro); 
+    font-weight: 'semi-bold';
+    font-size: 1rem;
+    z-index: 1000; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Colores para el estado de ÉXITO */
+.toast-feedback.success {
+    background-color: #4CAF50; 
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.4); 
+}
+
+
+.toast-feedback.error {
+    background-color: #cc180b; 
+    box-shadow: 0 4px 12px rgba(244, 67, 54, 0.4);
+}
+
+
+.toast-feedback {
+    opacity: 1; 
+    transform: translateX(-50%) translateY(0); 
+}
+
 
 
 @media (max-width: 768px) {
    .contacto-info {
   width:85%;
 }
+.toast-feedback {
+    left: 50%;
+}    
 
 .contacto-section {
   padding: 10px;
@@ -89,4 +130,7 @@
 .contacto-form {
  width: 85%;
 }
+.toast-feedback {
+    left: 50%;
+}  
 }

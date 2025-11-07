@@ -1,4 +1,3 @@
-import React from 'react';
 import Navbar from './components/Navbar';
 import BackToTop from './components/BackToTopButton';
 import { Carrousel } from './components/Carrousel';

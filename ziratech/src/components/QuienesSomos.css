@@ -123,6 +123,7 @@ div.card.h-100.p-3 {
 p.lead.text-muted{
     text-align: center;
 }
+
   div.card-body.text-center {
     max-width: 20vw;
     display: flex;
@@ -181,9 +182,8 @@ p.lead.text-muted{
   }
 
   .quienes-somos-image img {
-    width: 100%;
-    height: auto;
-  }
+  max-height: 630px;
+}
 
   .quienes-somos-parrafos {
     width:70%;

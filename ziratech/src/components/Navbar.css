@@ -82,8 +82,8 @@
   opacity: 0;
 }
 
-.navbar-menu li a:hover::after,
-.navbar-menu li a:hover::before {
+.navbar-menu  li a:hover::after,
+.navbar-menu  li a:hover::before {
   background-color: var(--color-principal);
 }
 
@@ -209,6 +209,13 @@ nav {
     overflow-y: auto;
 
   }
+
+  .navbar.menu-open .menu-toggle {
+        position: fixed; 
+        z-index: 1000; 
+        top: 0.5rem; 
+        right: 1rem;
+    }
 
   .navbar-menu ul {
     list-style: none;

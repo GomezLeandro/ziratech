@@ -1,4 +1,4 @@
-import React from 'react';
+
 import './Carrousel.css';
 export const Carrousel = () => {
   return (
@@ -11,7 +11,7 @@ export const Carrousel = () => {
 
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800,h_450,c_fill,f_auto,q_auto/v1760988678/branding_l66bxt.jpg' className="d-block w-100" alt="First slide" />
+          <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800/q_auto/f_auto/v1761499472/42950_rnbpgp.webp' className="d-block w-100" alt="First slide" />
           <div className="carousel-caption ">
             <h1 translate='no'>BRANDING</h1>
             <p>Diseñamos marcas que conectan.</p>
@@ -20,7 +20,7 @@ export const Carrousel = () => {
         </div>
 
         <div className="carousel-item">
-          <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800,h_450,c_fill,f_auto,q_auto/v1760988679/marketing_nfzqc3.jpg' className="d-block w-100" alt="Second slide" />
+          <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800/q_auto/f_auto/v1761499485/marketing_nfzqc3_nhiu8v.webp' className="d-block w-100" alt="Second slide" />
           <div className="carousel-caption">
             <h1>MARKETING DIGITAL</h1>
             <p>Potenciamos tu marca con estrategias personalizadas.</p>
@@ -29,7 +29,7 @@ export const Carrousel = () => {
         </div>
 
         <div className="carousel-item">
-          <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800,h_450,c_fill,f_auto,q_auto/v1760988680/desarrollo-web1_q7a93h.jpg' className="d-block w-100" alt="Third slide" />
+          <img src='https://res.cloudinary.com/dosdl7yqj/image/upload/w_800/q_auto/f_auto/v1761499792/website-development-2025-02-10-07-46-32-utc_pyxffq.webp' className="d-block w-100" alt="Third slide" />
           <div className="carousel-caption ">
             <h1>DISEÑO WEB</h1>
             <p>Transformamos ideas en plataformas digitales.</p>
@@ -38,7 +38,7 @@ export const Carrousel = () => {
         </div>
       </div>
 
-      {/* Flechas de navegación */}
+    
       <button className="carousel-control-prev" type="button" data-bs-target="#inicio" data-bs-slide="prev">
         <span className="carousel-control-prev-icon" aria-hidden="true"></span>
         <span className="visually-hidden">Anterior</span>
