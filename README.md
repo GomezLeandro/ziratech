@@ -14,7 +14,8 @@ El proyecto está construido sobre un stack de desarrollo moderno y escalable, c
     * **Gestión de Estado**: Se utiliza **React Context** para el manejo global del estado de la aplicación.
     * **Estilos**: Se implementa **CSS-in-JS** con **Styled Components** para garantizar un código limpio y modular, y un diseño responsive con un enfoque **mobile-first**.
     * **Routing**: **React Router DOM** se encarga de la navegación entre las diferentes secciones del sitio.
-* **Despliegue (Deployment)**: La aplicación se despliega en **Vercel** o **Netlify** para un rendimiento óptimo, con integración continua.
+* **Despliegue (Deployment)**: La aplicación se despliega en hosting de wiroos.
+* * **URL**: WWW.ZIRATECH.COM.AR
 
 ---
 
@@ -27,7 +28,7 @@ El sitio web incluye varias secciones y funcionalidades esenciales para una agen
 3.  **Portafolio de Proyectos**: Una galería interactiva que muestra casos de estudio, con descripciones, métricas de éxito y testimonios de clientes para validar la experiencia de la agencia.
 4.  **Acerca de Nosotros (About Us)**: Información sobre la historia de la agencia, su misión y el equipo detrás de los proyectos, para generar confianza y credibilidad.
 5.  **Formulario de Contacto**: Un formulario fácil de usar y optimizado para captar información de clientes potenciales, con validación en el lado del cliente para mejorar la experiencia.
-6.  **Sección de Testimonios**: Un carrusel o galería que muestra las opiniones de clientes satisfechos, reforzando la reputación de la agencia.
+
 
 ---
 
