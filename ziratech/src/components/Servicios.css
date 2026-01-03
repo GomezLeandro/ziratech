@@ -1,14 +1,14 @@
 .servicios {
 display:flex;
 flex-direction:column;
-padding:5% 0; /* Cambio: Eliminamos el padding horizontal del padre para usar el 100% de ancho */
+padding:5% 0; 
 background-color:#d2d2d7;
 width:100%
 }
 
 .servicios h2{
 margin-top:60px;
-text-align:center; /* Centramos el título */
+text-align:center;
 }
 .service-image{
     width: 30px;

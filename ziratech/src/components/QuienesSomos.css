@@ -1,6 +1,4 @@
-/* ============================
-   SECCIÓN QUIÉNES SOMOS
-   ============================ */
+/*  SECCIÓN QUIÉNES SOMOS  */
 .quienes-somos {
   display: flex;
   flex-direction: column;
@@ -21,9 +19,7 @@
   width: 100%;
 }
 
-/* ============================
-   BLOQUE DE TEXTO
-   ============================ */
+/*   BLOQUE DE TEXTO   */
 .quienes-somos-content {
   display: flex;
   flex-direction: column;
@@ -53,9 +49,7 @@
 
 
 
-/* ============================
-   BLOQUE DE IMAGEN
-   ============================ */
+/* BLOQUE DE IMAGEN */
 .quienes-somos-image {
   flex: 1 1 400px;
   display: flex;
@@ -141,9 +135,7 @@ p.lead.text-muted{
      margin-top: 0px;}
 
 
-/* ============================
-   MEDIA QUERY (TABLET / ESCRITORIO)
-   ============================ */
+/* MEDIA QUERY (TABLET / ESCRITORIO) */
 @media (min-width: 768px) {
  
   div.card.h-100.p-3 {

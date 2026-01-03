@@ -1,19 +1,19 @@
-/* --- Contenedor principal del menú --- */
+/*  Contenedor principal del menú  */
 .menu-container {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centra el logo y los íconos sociales */
-  justify-content: space-between; /* Empuja los íconos sociales hacia abajo */
+  align-items: center; 
+  justify-content: space-between; 
   height: 100%;
 }
 
-/* --- Logo en la parte superior --- */
+/* Logo en la parte superior  */
 .menu-logo {
   margin-bottom: 40px;
 }
 
 .menu-logo img {
-  width: 100px; /* Ajusta el tamaño del logo */
+  width: 100px; 
   height: auto;
 }
 
@@ -26,7 +26,7 @@
 
 .menu-nav li {
   padding: 15px 0;
-  border-bottom: 1px solid #e0e0e0; /* Separador entre elementos */
+  border-bottom: 1px solid #e0e0e0; 
 }
 
 
@@ -38,18 +38,18 @@
   align-items: center;
 }
 
-/* --- Estilo para el ícono de +/- --- */
+/*  Estilo para el ícono de +/- */
 .menu-nav .icon {
   margin-right: 10px;
-  color: #00bfff; /* Color azul para el ícono */
+  color: #00bfff; 
 }
 
-/* --- Estilo para el enlace activo --- */
+/* Estilo para el enlace activo*/
 .menu-nav a.active {
   color: #00bfff; /* Texto azul para el enlace activo */
 }
 
-/* --- Contenedor de íconos de redes sociales --- */
+/* Contenedor de íconos de redes sociales */
 .menu-social {
   display: flex;
   gap: 20px;

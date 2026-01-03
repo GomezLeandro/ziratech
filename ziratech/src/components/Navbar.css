@@ -1,4 +1,4 @@
-/* === ESTILOS BASE === */
+/* ESTILOS BASE  */
 .navbar {
   width: 288px;
   height: 100vh;
@@ -46,7 +46,7 @@
   padding-left: 20%;
 }
 .navbar-menu li a.active {
-    color: var(--color-principal); /* <-- Tu color azul */
+    color: var(--color-principal); 
 }
 
 
@@ -150,7 +150,7 @@ nav {
   display: none;
 }
 
-/* === VERSIÓN MOBILE Y TABLET === */
+/* VERSIÓN MOBILE Y TABLET  */
 @media (max-width: 1200px) {
   .logo {
     width: 100px;
@@ -173,16 +173,16 @@ nav {
     position: relative;
   }
 
-  /* ✅ HEADER: Logo y botón separados */
+  /*  Logo y botón separados */
   .navbar-header {
     display: flex;
-    justify-content: space-between; /* separación perfecta */
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-bottom: 1rem;
   }
 
-  /* ✅ MENÚ LATERAL CENTRADO */
+  /*MENÚ LATERAL CENTRADO */
   .navbar-menu {
     position: fixed;
     top: 0;

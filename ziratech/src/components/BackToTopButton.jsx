@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { FaArrowUp } from 'react-icons/fa';
 const BackToTopButton = () => {
-    // 1. Estado para controlar la visibilidad del botón
     const [isVisible, setIsVisible] = useState(false);
 
-    // 2. Función para manejar el scroll
+    // Función para manejar el scroll
     const handleScroll = () => {
         // Muestra el botón si el usuario se ha desplazado más de 300px
         if (window.scrollY > 300) {
@@ -14,7 +13,7 @@ const BackToTopButton = () => {
         }
     };
 
-    // 3. Función para hacer scroll al inicio de la página
+    // Función para hacer scroll al inicio de la página
     const scrollToTop = () => {
         // Esto hace el scroll de forma suave (smooth)
         window.scrollTo({
@@ -23,7 +22,7 @@ const BackToTopButton = () => {
         });
     };
 
-    // 4. Efecto para agregar y limpiar el listener del scroll
+    //  Efecto para agregar y limpiar el listener del scroll
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
 
@@ -34,11 +33,9 @@ const BackToTopButton = () => {
     }, []); // El array vacío asegura que el effect solo se ejecute al montar y desmontar
 
     return (
-        // El botón solo se renderiza si 'isVisible' es true
         <button
             className={`back-to-top ${isVisible ? 'visible' : ''}`}
             onClick={scrollToTop}
-            // Opcional: Icono de flecha para el botón
         >
             <FaArrowUp/>
         </button>

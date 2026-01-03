@@ -18,7 +18,7 @@ const QuienesSomos = () => {
   return (
     <div id="quienes-somos" className="quienes-somos">
       
-      {/* Bloque texto + imagen */}
+      
       <div className="quienes-somos-inner">
         <div className="quienes-somos-content">
           <div className="quienes-somos-title">
@@ -43,7 +43,7 @@ const QuienesSomos = () => {
         </div>
       </div>
 
-      {/* Contadores */}
+     
       <div className="quienes-somos-stats">
         <SeccionContadores />
       </div>

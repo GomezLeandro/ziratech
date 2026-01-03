@@ -1,18 +1,18 @@
-/* --- Estilos generales de la sección de portafolio --- */
+/*  Estilos generales de la sección de portafolio  */
 .portfolio {
   padding: 40px 20px;
 }
 
 
 
-/* --- Contenedor principal con layout de dos columnas --- */
+/*  Contenedor principal con layout de dos columnas  */
 .portfolio-container {
   display: flex;
-  gap: 40px; /* Espacio entre el submenú y la galería */
+  gap: 40px; 
   margin-top: 5%;
 }
 
-/* --- Columna 1: Submenú de categorías --- */
+/* Submenú de categorías */
 .portfolio-submenu {
   width: 20%;
   display: flex;
@@ -39,17 +39,16 @@
 }
 
 .paginacion-dots {
-    /* Esto hace que el <span> se alinee correctamente con el botón */
     display: inline-flex; 
     align-items: center; 
     justify-content: center;
     height: 40px; 
-    border: none;margin-right: 15px; /* Quita el borde no deseado */
+    border: none;margin-right: 15px; 
 }
 
 
 
-/* --- Columna 2: Galería de proyectos --- */
+/*  Galería de proyectos  */
 .portfolio-grid {
   width: 60%;
   display: grid;
@@ -58,7 +57,7 @@
   min-height: 65vh;
 }
 
-/* --- Estilos de cada elemento del portafolio --- */
+/*  Estilos de cada elemento del portafolio  */
 .portfolio-item {
   position: relative;
   overflow: hidden;
@@ -71,7 +70,7 @@
   max-width: 250px;
 }
 
-/* --- Overlay que aparece desde abajo --- */
+/* Overlay que aparece desde abajo */
 .portfolio-item-overlay {
   position: absolute;
   bottom: 0;
@@ -100,7 +99,7 @@
   color: var(--color-secundario);
 }
 
-/* --- Paginación --- */
+/* Paginación */
 .paginacion-container {
   margin-top: 5%;
   display: flex;
@@ -118,10 +117,10 @@
   color: var(--color-principal);
 }
 
-/* --- Responsive: móvil y tablet --- */
+/* móvil y tablet */
 @media (max-width: 768px) {
   .portfolio-container {
-    flex-direction: column; /* Submenú arriba */
+    flex-direction: column;
     gap: 20px;
   }
 
@@ -130,7 +129,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    overflow-x: auto; /* scroll horizontal */
+    overflow-x: auto;
     gap: 15px;
     padding-bottom: 10px;
     scrollbar-width: none; /* Oculta el scrollbar en Firefox */
@@ -141,7 +140,7 @@
   }
 
   .portfolio-submenu button {
-    flex: 0 0 auto; /* Evita que los botones se reduzcan */
+    flex: 0 0 auto; 
     padding: 8px 14px;
     font-size: 0.9em;
     border-radius: 6px;

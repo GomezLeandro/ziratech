@@ -20,7 +20,7 @@ const observer = new IntersectionObserver((entries) => {
 const visibleSections = entries.filter(entry => entry.isIntersecting);
 
 if (visibleSections.length > 0) {
-// 🔑 LÓGICA CLAVE: Ordenar por la posición más cercana al top (valor más pequeño de .top)
+// Ordenar por la posición más cercana al top 
 visibleSections.sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
 
 const newActiveId = visibleSections[0].target.id;
@@ -49,7 +49,7 @@ setIsOpen(!isOpen);
 };
 
 const handleLinkClick = (e, targetId) => {
-// Previene el '#' en la URL y pinta el enlace inmediatamente
+
 e.preventDefault();
 
 setActiveSection(targetId);

@@ -5,22 +5,22 @@ import './CountUp.css';
 
 export function ContadorEstadistica({ endValue, label, prefix = '', suffix = '' }) {
   
-  // 1. Usamos el hook useInView. 
+  // Usamos el hook useInView. 
   const [ref, inView] = useInView({
-    triggerOnce: true, // Importante: solo lo detecta una vez
+    triggerOnce: true, // Solo queremos que se dispare una vez
     threshold: 0.5,    // Cuándo se considera visible (50% del elemento)
   });
 
   return (
     <div className='container-count-up'>
       <div className="card h-100 p-3" style={{backgroundColor:'transparent',border:'none' , color:'black'}}>
-        <div className="card-body text-center" ref={ref}> {/*  Adjuntamos el ref al contenedor */}
+        <div className="card-body text-center" ref={ref}> 
           
           <h1 className="display-3 text-primary fw-bolder mb-3">
             
             <CountUp 
               start={0}
-              // 2. Usamos el estado 'inView' para controlar el valor final
+              // Usamos el estado 'inView' para controlar el valor final
               end={inView ? endValue : 0} 
               duration={3.25}
               separator="."

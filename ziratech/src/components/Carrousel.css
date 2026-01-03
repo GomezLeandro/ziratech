@@ -10,7 +10,7 @@
 } 
 
 .carousel-caption {
-    /* **1. CENTRADO PERFECTO DE LA CAJA (CORRECCIÓN)** */
+    /*  CENTRADO PERFECTO DE LA CAJA (CORRECCIÓN)** */
     position: absolute; 
     top: 50%;
     left: 50%;
@@ -18,7 +18,7 @@
     right:0;
     bottom:0;
 
-    /* **2. CONTROL DE ANCHO (CLAVE)** */
+    /*  CONTROL DE ANCHO  */
     /* Usamos un ancho máximo estricto para que no se salga */
     max-width: 90%;
     

@@ -1,4 +1,4 @@
-// --- Array de Proyectos (exportado) alojados en cloudinary.com---
+// Array de Proyectos (exportado) alojados en cloudinary.com
 export const projects = [
     { id: 1, category: 'Branding', title: 'Aulas Digitales', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499120/ZIRA_TECH_Portfolio_qhynep.webp'},
     { id: 2, category: 'Branding', title: 'Club 54', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499116/ZIRA_TECH_Portfolio2_xd1qvj.webp' },
@@ -45,5 +45,5 @@ export const projects = [
     { id: 47, category: 'Diseño Web', title: 'Paw Print', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498963/ZIRA-TECH_Portfolio39_biymdi.webp'},
 ];
 
-// --- Constante de Categorías (exportada) ---
+// Constante de Categorías (exportada)
 export const categories = ['TODOS', ...new Set(projects.map(p => p.category))];
