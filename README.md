@@ -42,14 +42,15 @@ Sigue estos comandos para ejecutar el proyecto en tu máquina local:
 La aplicación se ejecutará automáticamente en http://localhost:3000
 
 ## 📂 Estructura del Proyecto
+  ```Plaintext
+  src/
+├── assets/      # Imágenes, logotipos y recursos estáticos
+├── components/  # Componentes globales (Navbar, Footer, etc.)
+├── pages/       # Vistas principales (Home, Servicios, Contacto)
+├── styles/      # Hojas de estilo modulares
+├── App.jsx      # Configuración de rutas y layout raíz
+└── main.jsx     # Punto de entrada de la aplicación
 
-src/
- ├── assets/        # Imágenes, logotipos y recursos estáticos
- ├── components/    # Componentes globales de la interfaz (Navbar, Footer, etc.)
- ├── views/         # Vistas principales de secciones (Home, Servicios, Contacto)
- ├── styles/        # Hojas de estilo modulares
- ├── App.jsx        # Configuración de rutas y layout raíz
- └── main.jsx       # Punto de entrada de la aplicación
 
 👤 Autor
 
