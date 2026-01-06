@@ -50,7 +50,7 @@ La aplicación se ejecutará automáticamente en http://localhost:3000
 ├── styles/      # Hojas de estilo modulares
 ├── App.jsx      # Configuración de rutas y layout raíz
 └── main.jsx     # Punto de entrada de la aplicación
-
+ ```
 
 👤 Autor
 
