@@ -1,43 +1,63 @@
-# ziratech
+# Ziratech - Soluciones Tecnológicas
 
-# **Descripción del Proyecto: Sitio Web para Agencia de Marketing Digital**
+Sitio web corporativo de **Ziratech**, una plataforma orientada a la transformación digital y consultoría IT. El proyecto destaca por una arquitectura limpia en React, enfocada en la escalabilidad y una experiencia de usuario (UX) de alto rendimiento.
 
-Este proyecto es la creación de un sitio web profesional y moderno para una **agencia de marketing digital**. Diseñada para ser la principal herramienta de presentación y comunicación de la agencia. El objetivo es ofrecer una experiencia de usuario (UX) fluida, intuitiva y visualmente atractiva, que destaque la calidad y la profesionalidad de los servicios ofrecidos.
+## 🌐 Producción
+Puedes visitar el sitio en vivo aquí: [www.ziratech.com.ar](http://www.ziratech.com.ar)
 
----
+## 🛠️ Stack Tecnológico
 
-### **Tecnologías y Stack**
+* **Core:** [React.js](https://react.dev/)
+* **Enrutamiento:** [React Router DOM](https://reactrouter.com/) (Navegación SPA)
+* **Estilos:** CSS3 con metodología modular y diseño adaptativo.
+* **Manejo de Assets:** Optimización de recursos estáticos para carga rápida.
 
-El proyecto está construido sobre un stack de desarrollo moderno y escalable, con un enfoque en el rendimiento y la mantenibilidad.
+## 🚀 Características Técnicas 
 
-* **Frontend**: **React.js**.
-    * **Gestión de Estado**: Se utiliza **React Context** para el manejo global del estado de la aplicación.
-    * **Estilos**: Se implementa **CSS-in-JS** con **Styled Components** para garantizar un código limpio y modular, y un diseño responsive con un enfoque **mobile-first**.
-    * **Routing**: **React Router DOM** se encarga de la navegación entre las diferentes secciones del sitio.
-* **Despliegue (Deployment)**: La aplicación se despliega en hosting de wiroos.
-* * **URL**: WWW.ZIRATECH.COM.AR
+* **Componentización:** Desarrollo basado en componentes reutilizables y desacoplados.
+* **Navegación Dinámica:** Implementación de rutas para una navegación fluida sin recargas.
+* **SEO & Responsiveness:** Estructura preparada para indexación y totalmente adaptable a dispositivos móviles y desktop.
+* **Clean Code:** Organización de archivos lógica y semántica.
 
----
+## 💻 Configuración Local
 
-### **Características Clave**
+Sigue estos comandos para ejecutar el proyecto en tu máquina local:
 
-El sitio web incluye varias secciones y funcionalidades esenciales para una agencia de marketing digital:
+1. **Clonar el repositorio:**
+   ```bash
+   git clone [https://github.com/GomezLeandro/ziratech.git](https://github.com/GomezLeandro/ziratech.git)
 
-1.  **Página de Inicio (Home)**: Una sección principal dinámica que presenta la propuesta de valor de la agencia, una llamada a la acción clara y un resumen de los servicios más destacados.
-2.  **Sección de Servicios**: Una página dedicada a detallar cada servicio (SEO, marketing de contenidos, gestión de redes sociales, etc.), explicando sus beneficios y el proceso de trabajo.
-3.  **Portafolio de Proyectos**: Una galería interactiva que muestra casos de estudio, con descripciones, métricas de éxito y testimonios de clientes para validar la experiencia de la agencia.
-4.  **Acerca de Nosotros (About Us)**: Información sobre la historia de la agencia, su misión y el equipo detrás de los proyectos, para generar confianza y credibilidad.
-5.  **Formulario de Contacto**: Un formulario fácil de usar y optimizado para captar información de clientes potenciales, con validación en el lado del cliente para mejorar la experiencia.
+2. **Ingresar al repositorio**
+   ```bash
+   cd ziratech
+   
+3. **Instalar dependencias**
+   ```bash
+   npm install
+   
+4. **Iniciar servidor de desarrollo**
+   ```bash
+   npm run dev
+   
+La aplicación se ejecutará automáticamente en http://localhost:3000
 
+## 📂 Estructura del Proyecto
 
----
+src/
+ ├── assets/        # Imágenes, logotipos y recursos estáticos
+ ├── components/    # Componentes globales de la interfaz (Navbar, Footer, etc.)
+ ├── views/         # Vistas principales de secciones (Home, Servicios, Contacto)
+ ├── styles/        # Hojas de estilo modulares
+ ├── App.jsx        # Configuración de rutas y layout raíz
+ └── main.jsx       # Punto de entrada de la aplicación
 
-### **Rendimiento y Optimización**
+👤 Autor
 
-Se ha puesto especial énfasis en la optimización del rendimiento para asegurar una carga rápida y una navegación sin interrupciones. Esto incluye:
+Leandro Gomez
 
-* **Optimización de Imágenes**: Compresión y carga lazy loading para reducir el tiempo de carga inicial.
-* **División de Código (Code Splitting)**: Carga de componentes de forma asíncrona para mejorar el rendimiento.
-* **SEO**: Estructura de código optimizada para motores de búsqueda.
+GitHub: @GomezLeandro
 
-Este proyecto está diseñado para ser una herramienta efectiva que atraiga y convierta visitantes en clientes, ofreciendo una ventana digital profesional y atractiva a los servicios de la agencia.
+LinkedIn: www.linkedin.com/in/leandro-matias-gomez
+
+Web: ziratech.com.ar
+   
