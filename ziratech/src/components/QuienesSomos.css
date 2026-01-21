@@ -1,4 +1,3 @@
-/*  SECCIÓN QUIÉNES SOMOS  */
 .quienes-somos {
   display: flex;
   flex-direction: column;
@@ -9,7 +8,6 @@
   margin: 0 auto;
 }
 
-/* Contenedor interno (texto + imagen) */
 .quienes-somos-inner {
   display: flex;
   flex-direction: column;
@@ -19,27 +17,24 @@
   width: 100%;
 }
 
-/*   BLOQUE DE TEXTO   */
 .quienes-somos-content {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 800px;
-
 }
 
 .quienes-somos-title {
   display: flex;
   align-items: center;
   justify-content: center;
-  width:95%;
+  width: 95%;
   gap: 8px;
   margin-bottom: 5%;
 }
 .quienes-somos-title h2 {
-  margin-left: 0;;
+  margin-left: 0;
 }
-
 
 .quienes-somos-title span {
   color: #00b7ff;
@@ -47,9 +42,6 @@
   font-size: 2rem;
 }
 
-
-
-/* BLOQUE DE IMAGEN */
 .quienes-somos-image {
   flex: 1 1 400px;
   display: flex;
@@ -66,30 +58,22 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-
- .quienes-somos-stats {
+.quienes-somos-stats {
   width: 100%;
-  background-color: var(--color-principal); 
+  background-color: var(--color-principal);
   color: var(--color-texto-claro);
   text-align: center;
-  
-} 
+}
 
 .quienes-somos-stats .row {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width:80%;
+  width: 80%;
   margin: 0 auto;
 }
-  
 
-
-
-
-
-/* Cada contador individual */
 .contador-estadistica {
   flex: 1 1 200px;
   max-width: 300px;
@@ -106,53 +90,50 @@
   font-size: 1rem;
   font-weight: 800;
   margin: 0;
-  color:var(--color-texto-claro);
+  color: var(--color-texto-claro);
 }
 
 div.card.h-100.p-3 {
-    width:70vw;
-    display:contents
-  }
-
-p.lead.text-muted{
-    text-align: center;
+  width: 70vw;
+  display: contents;
 }
 
-  div.card-body.text-center {
-    max-width: 20vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+p.lead.text-muted {
+  text-align: center;
+}
 
-  }
+div.card-body.text-center {
+  max-width: 20vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  .row>* {
-     flex-shrink: 0;
-     width: initial ;
-     max-width: initial;
-     padding-right: 0px;
-     padding-left: 0px;
-     margin-top: 0px;}
+.row > * {
+  flex-shrink: 0;
+  width: initial;
+  max-width: initial;
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+}
 
-
-/* MEDIA QUERY (TABLET / ESCRITORIO) */
 @media (min-width: 768px) {
- 
   div.card.h-100.p-3 {
-    width:100%;
+    width: 100%;
   }
 
   .quienes-somos-parrafos {
-  line-height: 1.6;
-  width:80%;
-}
+    line-height: 1.6;
+    width: 80%;
+  }
   .quienes-somos-stats .row {
     flex-direction: row;
     justify-content: center;
     flex-wrap: nowrap;
     gap: 0px;
   }
- 
+
   .quienes-somos-inner {
     flex-direction: row;
     justify-content: space-between;
@@ -162,7 +143,7 @@ p.lead.text-muted{
   }
 
   .quienes-somos-content {
-    display:flex;
+    display: flex;
     flex-direction: column;
     align-items: center;
     max-width: 50%;
@@ -170,18 +151,18 @@ p.lead.text-muted{
 
   .quienes-somos-image {
     max-width: 50%;
-     justify-content: center;
+    justify-content: center;
   }
 
   .quienes-somos-image img {
-  max-height: 630px;
-}
+    max-height: 630px;
+  }
 
   .quienes-somos-parrafos {
-    width:70%;
+    width: 70%;
     margin-left: 15%;
-}
-.quienes-somos-title {
-  margin-bottom: 15%;;
-}
+  }
+  .quienes-somos-title {
+    margin-bottom: 15%;
+  }
 }

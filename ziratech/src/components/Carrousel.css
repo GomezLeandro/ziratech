@@ -1,81 +1,58 @@
 .carousel-control-next:hover,
-.carousel-control-prev:hover{
+.carousel-control-prev:hover {
   background-color: transparent;
 }
-
 
 .carousel-item img {
   height: 100vh;
   object-fit: cover;
-} 
-
-.carousel-caption {
-    /*  CENTRADO PERFECTO DE LA CAJA (CORRECCIÓN)** */
-    position: absolute; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    right:0;
-    bottom:0;
-
-    /*  CONTROL DE ANCHO  */
-    /* Usamos un ancho máximo estricto para que no se salga */
-    max-width: 90%;
-    
-    /* Permitimos que el ancho mínimo sea el necesario para el contenido */
-    min-width: 62%; /* <-- ELIMINAMOS EL min-width: 62% para que se ajuste */
-    width: fit-content; 
-    
-    /* **3. FLEXBOX INTERNO Y ALINEACIÓN DE CONTENIDO** */
-    display: flex;
-    flex-direction: column;
-    
-    /* Centra horizontalmente el contenido dentro del CAPTION si no es flex-start */
-    align-items: flex-start; 
-    
-    /* Centra verticalmente el contenido dentro del CAPTION */
-    justify-content: center;
-
-    /* --- Estilos de Apariencia (Mantenidos) --- */
-    background-color: var(--color-transparente-fondo);
-    padding: 40px; 
-    color: var(--color-texto-claro);
-    text-align: center; 
-    gap: 20px;
-    border-radius: 10px;
-    
-  
 }
 
-/* --- Estilo del párrafo --- */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  bottom: 0;
+  max-width: 90%;
+  min-width: 62%;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--color-transparente-fondo);
+  padding: 40px;
+  color: var(--color-texto-claro);
+  text-align: center;
+  gap: 20px;
+  border-radius: 10px;
+}
+
 .carousel-caption p {
   font-size: clamp(1.3rem, 2vw, 2.1rem);
   margin: 0;
   text-align: left;
 }
 
-/* AJUSTES PARA DISPOSITIVOS MÓVILES (Menos de 600px de ancho) */
 @media (max-width: 600px) {
-        .carousel-caption {
-        padding: 5px 20px;
-        max-width: 70%;
-        min-width: 60%;
-        gap: 10px;
-        height: 250px;
-        }
-    .carousel-item img {
-  height: 75vh;
- 
-} 
+  .carousel-caption {
+    padding: 5px 20px;
+    max-width: 70%;
+    min-width: 60%;
+    gap: 10px;
+    height: 250px;
+  }
+  .carousel-item img {
+    height: 75vh;
+  }
 
-    .carousel-caption p {
-        /* Reducir el tamaño de la fuente para que el texto sea más compacto */
-        font-size: 1rem; 
-    }
-    
-    /* Si tienes un título (h1/h2) dentro, también ajústalo */
-    .carousel-caption h1 { 
-        font-size: 2rem;
-    }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption h1 {
+    font-size: 2rem;
+  }
 }
-

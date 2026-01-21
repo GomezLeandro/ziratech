@@ -1,5 +1,4 @@
 :root {
-  /* TEMAS PARA FUENTES */
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -9,7 +8,6 @@
   -moz-osx-font-smoothing: grayscale;
   --espaciado-lg: 40px;
 
-  /* VARIABLES DE COLOR */
   --color-principal: #009fe3;
   --color-transparente-fondo: rgba(0, 159, 227, 0.85);
   --color-texto-claro: white;
@@ -18,12 +16,9 @@
   background-color: #242424;
 }
 
-/* Estilos globales etiquetas */
-
-
 ul li a:hover,
 ul li a:focus {
-    color: var(--color-principal); 
+  color: var(--color-principal);
 }
 
 body {
@@ -33,15 +28,15 @@ body {
   min-height: 100vh;
   display: block;
 }
-p{
-  font-size:clamp(1rem, 2.5vw, 1.5em);
+p {
+  font-size: clamp(1rem, 2.5vw, 1.5em);
   line-height: 1.5;
   font-weight: 300;
   text-align: left;
 }
 
 h1 {
-  font-size:clamp(2rem, 4vw, 4.2em);
+  font-size: clamp(2rem, 4vw, 4.2em);
   line-height: 1.1;
   font-weight: bold;
   text-align: left;
@@ -54,7 +49,7 @@ h2 {
   text-align: center;
 }
 
-h3{
+h3 {
   font-size: clamp(1.1rem, 1.2vw, 1.5rem);
   font-weight: 500;
 }
@@ -65,20 +60,19 @@ button {
   font-weight: 300;
   font-family: inherit;
   background-color: var(--color-texto-claro);
-  color:var(--color-terciario);
+  color: var(--color-terciario);
   transition: border-color 0.25s;
   border: none;
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s;
-  
 }
 
 button:hover {
   background-color: var(--color-secundario);
-  color:var(--color-terciario);
-  border:none;
+  color: var(--color-terciario);
+  border: none;
 }
 
 button:focus,

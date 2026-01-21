@@ -1,49 +1,309 @@
 // Array de Proyectos (exportado) alojados en cloudinary.com
 export const projects = [
-    { id: 1, category: 'Branding', title: 'Aulas Digitales', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499120/ZIRA_TECH_Portfolio_qhynep.webp'},
-    { id: 2, category: 'Branding', title: 'Club 54', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499116/ZIRA_TECH_Portfolio2_xd1qvj.webp' },
-    { id: 3, category: 'Branding', title: 'GAV Dermoéstetica', image:'https://res.cloudinary.com/dosdl7yqj/image/upload//w_500/q_auto/f_auto/v1761499124/ZIRA_TECH_Portfolio3_lxouck.webp'},
-    { id: 4, category: 'Branding', title: 'Laugh & Care', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499113/ZIRA_TECH_Portfolio5_ru7fbb.webp'},
-    { id: 5, category: 'Branding', title: 'Laugh & Care', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499095/ZIRA_TECH_Portfolio4_eqwoty.webp'},
-    { id: 6, category: 'Branding', title: 'Marcelo Marino Arquitectura', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499081/ZIRA_TECH_Portfolio6_d5ozlg.webp'},
-    { id: 7, category: 'Branding', title: 'Nomadland ', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499091/ZIRA_TECH_Portfolio7_gfcxq5.webp'},
-    { id: 8, category: 'Branding', title: 'Picadas del Pilar', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499085/ZIRA_TECH_Portfolio8_llhrzd.webp' },
-    { id: 9, category: 'Branding', title: 'Paw Print', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499109/ZIRA_TECH_Portfolio9_jzmjoj.webp' },
-    { id: 10, category: 'Branding', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499105/ZIRA_TECH_Portfolio10_nxgqoz.webp'},
-    { id: 11, category: 'Branding', title: 'SMID Propiedades', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499102/ZIRA_TECH_Portfolio11_mendgm.webp'},
-    { id: 12, category: 'Branding', title: 'Wini ingredientes', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499098/ZIRA_TECH_Portfolio12_d7zjzl.webp'},
-    { id: 16, category: 'Diseño Gráfico', title: 'Nomadland', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499391/ZIRA_TECH_Portfolio14_rklc1z.webp' },
-    { id: 17, category: 'Diseño Gráfico', title: 'Clover', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499382/ZIRA_TECH_Portfolio16_gkf3qx.webp'},
-    { id: 18, category: 'Diseño Gráfico', title: 'Peponas Cakes', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499371/ZIRA_TECH_Portfolio17_twr4sa.webp'},
-    { id: 19, category: 'Diseño Gráfico', title: 'Picadas del Pilar', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499372/ZIRA_TECH_Portfolio18_f3plfa.webp' },
-    { id: 20, category: 'Diseño Gráfico', title: 'SMID Propiedades', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499377/ZIRA_TECH_Portfolio19_uk2e5d.webp'},
-    { id: 21, category: 'Diseño Gráfico', title: 'SMID Propiedades', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499356/ZIRA_TECH_Portfolio20_tvmsrj.webp' },
-    { id: 22, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499365/ZIRA_TECH_Portfolio21_nmirlf.webp'},
-    { id: 23, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499351/ZIRA_TECH_Portfolio23_w4cpuu.webp'},
-    { id: 24, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499346/ZIRA_TECH_Portfolio22_vsts49.webp'},
-    { id: 25, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499341/ZIRA_TECH_Portfolio24_wsxkwz.webp' },
-    { id: 26, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499337/ZIRA_TECH_Portfolio27_hc73lz.webp '},
-    { id: 27, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499332/ZIRA_TECH_Portfolio25_lcqiko.webp '},
-    { id: 28, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499328/ZIRA_TECH_Portfolio26_l1hzzz.webp '},
-    { id: 29, category: 'Diseño Gráfico', title: 'Paw Print', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499324/ZIRA_TECH_Portfolio28_mwfnjm.webp'},
-    { id: 31, category: 'Diseño Gráfico', title: 'AMET', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499319/ZIRA_TECH_Portfolio30_cyjjyx.webp'},
-    { id: 32, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499315/ZIRA-TECH_Portfolio45_vppat1.webp'},
-    { id: 33, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499311/ZIRA-TECH_Portfolio44_mzvkpw.webp'},
-    { id: 34, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499307/ZIRA-TECH_Portfolio43_iiktgq.webp'},
-    { id: 35, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499303/ZIRA-TECH_Portfolio42_ofbhrz.webp'},
-    { id: 36, category: 'Diseño Gráfico', title: 'RIX', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499299/ZIRA-TECH_Portfolio41_ga67f5.webp'},
-    { id: 37, category: 'Diseño Gráfico', title: 'Nomadland', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499386/ZIRA_TECH_Portfolio15_gdueon.webp' },
-    { id: 38, category: 'Diseño Gráfico', title: 'Aulas Digitales', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499295/ZIRA-TECH_Portfolio40_rz95cx.webp'},
-    { id: 39, category: 'Diseño Web', title: 'Aulas Digitales', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498975/ZIRA_TECH_Portfolio31_cpqqta.webp' },
-    { id: 40, category: 'Diseño Web', title: 'SMID Propiedades', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498978/ZIRA_TECH_Portfolio32_ac7jlv.webp'},
-    { id: 41, category: 'Diseño Web', title: 'Rix', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498981/ZIRA_TECH_Portfolio33_gcty9a.webp' },
-    { id: 42, category: 'Diseño Web', title: 'MM Ingenieria', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498972/ZIRA_TECH_Portfolio34_elzr1r.webp' },
-    { id: 43, category: 'Diseño Web', title: 'Astra', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498969/ZIRA_TECH_Portfolio35_uublfs.webp'},
-    { id: 44, category: 'Diseño Web', title: 'Wini Ingredientes', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498966/ZIRA_TECH_Portfolio36_po1qqd.webp' },
-    { id: 45, category: 'Diseño Web', title: 'Artistique', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498958/ZIRA-TECH_Portfolio37_znrt8u.webp'},
-    { id: 46, category: 'Diseño Web', title: 'Peponas cakes', image: 'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498960/ZIRA-TECH_Portfolio38_cyrpww.webp'},
-    { id: 47, category: 'Diseño Web', title: 'Paw Print', image:'https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498963/ZIRA-TECH_Portfolio39_biymdi.webp'},
+  {
+    id: 1,
+    category: "Branding",
+    title: "Aulas Digitales",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499120/ZIRA_TECH_Portfolio_qhynep.webp",
+  },
+  {
+    id: 2,
+    category: "Branding",
+    title: "Club 54",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499116/ZIRA_TECH_Portfolio2_xd1qvj.webp",
+  },
+  {
+    id: 3,
+    category: "Branding",
+    title: "GAV Dermoéstetica",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload//w_500/q_auto/f_auto/v1761499124/ZIRA_TECH_Portfolio3_lxouck.webp",
+  },
+  {
+    id: 4,
+    category: "Branding",
+    title: "Laugh & Care",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499113/ZIRA_TECH_Portfolio5_ru7fbb.webp",
+  },
+  {
+    id: 5,
+    category: "Branding",
+    title: "Laugh & Care",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499095/ZIRA_TECH_Portfolio4_eqwoty.webp",
+  },
+  {
+    id: 6,
+    category: "Branding",
+    title: "Marcelo Marino Arquitectura",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499081/ZIRA_TECH_Portfolio6_d5ozlg.webp",
+  },
+  {
+    id: 7,
+    category: "Branding",
+    title: "Nomadland ",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499091/ZIRA_TECH_Portfolio7_gfcxq5.webp",
+  },
+  {
+    id: 8,
+    category: "Branding",
+    title: "Picadas del Pilar",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499085/ZIRA_TECH_Portfolio8_llhrzd.webp",
+  },
+  {
+    id: 9,
+    category: "Branding",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499109/ZIRA_TECH_Portfolio9_jzmjoj.webp",
+  },
+  {
+    id: 10,
+    category: "Branding",
+    title: "RIX",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499105/ZIRA_TECH_Portfolio10_nxgqoz.webp",
+  },
+  {
+    id: 11,
+    category: "Branding",
+    title: "SMID Propiedades",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499102/ZIRA_TECH_Portfolio11_mendgm.webp",
+  },
+  {
+    id: 12,
+    category: "Branding",
+    title: "Wini ingredientes",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499098/ZIRA_TECH_Portfolio12_d7zjzl.webp",
+  },
+  {
+    id: 16,
+    category: "Diseño Gráfico",
+    title: "Nomadland",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499391/ZIRA_TECH_Portfolio14_rklc1z.webp",
+  },
+  {
+    id: 17,
+    category: "Diseño Gráfico",
+    title: "Clover",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499382/ZIRA_TECH_Portfolio16_gkf3qx.webp",
+  },
+  {
+    id: 18,
+    category: "Diseño Gráfico",
+    title: "Peponas Cakes",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499371/ZIRA_TECH_Portfolio17_twr4sa.webp",
+  },
+  {
+    id: 19,
+    category: "Diseño Gráfico",
+    title: "Picadas del Pilar",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499372/ZIRA_TECH_Portfolio18_f3plfa.webp",
+  },
+  {
+    id: 20,
+    category: "Diseño Gráfico",
+    title: "SMID Propiedades",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499377/ZIRA_TECH_Portfolio19_uk2e5d.webp",
+  },
+  {
+    id: 21,
+    category: "Diseño Gráfico",
+    title: "SMID Propiedades",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499356/ZIRA_TECH_Portfolio20_tvmsrj.webp",
+  },
+  {
+    id: 22,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499365/ZIRA_TECH_Portfolio21_nmirlf.webp",
+  },
+  {
+    id: 23,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499351/ZIRA_TECH_Portfolio23_w4cpuu.webp",
+  },
+  {
+    id: 24,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499346/ZIRA_TECH_Portfolio22_vsts49.webp",
+  },
+  {
+    id: 25,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499341/ZIRA_TECH_Portfolio24_wsxkwz.webp",
+  },
+  {
+    id: 26,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499337/ZIRA_TECH_Portfolio27_hc73lz.webp ",
+  },
+  {
+    id: 27,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499332/ZIRA_TECH_Portfolio25_lcqiko.webp ",
+  },
+  {
+    id: 28,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499328/ZIRA_TECH_Portfolio26_l1hzzz.webp ",
+  },
+  {
+    id: 29,
+    category: "Diseño Gráfico",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499324/ZIRA_TECH_Portfolio28_mwfnjm.webp",
+  },
+  {
+    id: 31,
+    category: "Diseño Gráfico",
+    title: "AMET",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499319/ZIRA_TECH_Portfolio30_cyjjyx.webp",
+  },
+  {
+    id: 32,
+    category: "Diseño Gráfico",
+    title: "RIX",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499315/ZIRA-TECH_Portfolio45_vppat1.webp",
+  },
+  {
+    id: 33,
+    category: "Diseño Gráfico",
+    title: "RIX",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499311/ZIRA-TECH_Portfolio44_mzvkpw.webp",
+  },
+  {
+    id: 34,
+    category: "Diseño Gráfico",
+    title: "RIX",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499307/ZIRA-TECH_Portfolio43_iiktgq.webp",
+  },
+  {
+    id: 35,
+    category: "Diseño Gráfico",
+    title: "RIX",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499303/ZIRA-TECH_Portfolio42_ofbhrz.webp",
+  },
+  {
+    id: 36,
+    category: "Diseño Gráfico",
+    title: "RIX",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499299/ZIRA-TECH_Portfolio41_ga67f5.webp",
+  },
+  {
+    id: 37,
+    category: "Diseño Gráfico",
+    title: "Nomadland",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499386/ZIRA_TECH_Portfolio15_gdueon.webp",
+  },
+  {
+    id: 38,
+    category: "Diseño Gráfico",
+    title: "Aulas Digitales",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761499295/ZIRA-TECH_Portfolio40_rz95cx.webp",
+  },
+  {
+    id: 39,
+    category: "Diseño Web",
+    title: "Aulas Digitales",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498975/ZIRA_TECH_Portfolio31_cpqqta.webp",
+  },
+  {
+    id: 40,
+    category: "Diseño Web",
+    title: "SMID Propiedades",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498978/ZIRA_TECH_Portfolio32_ac7jlv.webp",
+  },
+  {
+    id: 41,
+    category: "Diseño Web",
+    title: "Rix",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498981/ZIRA_TECH_Portfolio33_gcty9a.webp",
+  },
+  {
+    id: 42,
+    category: "Diseño Web",
+    title: "MM Ingenieria",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498972/ZIRA_TECH_Portfolio34_elzr1r.webp",
+  },
+  {
+    id: 43,
+    category: "Diseño Web",
+    title: "Astra",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498969/ZIRA_TECH_Portfolio35_uublfs.webp",
+  },
+  {
+    id: 44,
+    category: "Diseño Web",
+    title: "Wini Ingredientes",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498966/ZIRA_TECH_Portfolio36_po1qqd.webp",
+  },
+  {
+    id: 45,
+    category: "Diseño Web",
+    title: "Artistique",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498958/ZIRA-TECH_Portfolio37_znrt8u.webp",
+  },
+  {
+    id: 46,
+    category: "Diseño Web",
+    title: "Peponas cakes",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498960/ZIRA-TECH_Portfolio38_cyrpww.webp",
+  },
+  {
+    id: 47,
+    category: "Diseño Web",
+    title: "Paw Print",
+    image:
+      "https://res.cloudinary.com/dosdl7yqj/image/upload/w_500/q_auto/f_auto/v1761498963/ZIRA-TECH_Portfolio39_biymdi.webp",
+  },
 ];
 
-// Constante de Categorías (exportada)
-export const categories = ['TODOS', ...new Set(projects.map(p => p.category))];
+export const categories = [
+  "TODOS",
+  ...new Set(projects.map((p) => p.category)),
+];
